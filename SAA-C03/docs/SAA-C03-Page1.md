@@ -28,3 +28,5 @@
 - Route 53 
 - CloudFront
 - WAF 
+
+> **NOTE**: **AWS Rekognition is a regional service.**
