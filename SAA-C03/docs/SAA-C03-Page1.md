@@ -1,6 +1,6 @@
 # AWS CERTIFIED SOLUTIONS ARCHITECT ASSOCIATE - SAA C03
 
- ### 1. AWS GLOBAL INFRASTRUCTURE
+ ## 1. AWS GLOBAL INFRASTRUCTURE
  - AWS Regions
  - AWS Availability Zones
  - AWS Data Centers
@@ -30,3 +30,5 @@
 - WAF 
 
 > **NOTE**: **AWS Rekognition is a regional service.**
+
+## 2. IAM & AWS CLI
