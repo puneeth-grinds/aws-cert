@@ -20,3 +20,11 @@
 - Each region has a **minimum of 3 and maximum of 6 AZ's**.
 -  Availability Zones are **one or more discrete centers**
 
+#### 1.4 AWS Points of Presence (Edge Locations)
+- Amazon has **400+ Edge locations**
+
+#### 1.5 AWS GLOBAL SERVICES
+- Identity and Access Management (IAM)
+- Route 53 
+- CloudFront
+- WAF 
