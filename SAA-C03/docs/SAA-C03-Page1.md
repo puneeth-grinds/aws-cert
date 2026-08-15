@@ -38,14 +38,14 @@
 > **Effect and Action are mandatory in a IAM Permission**
 
 #### 2.1 IAM Policies Inheritance
-- **Inline policies** - Users who don't belong to any group 
+- **Inline policies** - Is simply a policy that is embedded directly into one **IAM Identity(User, group or role)** 
 - Consits of:
     - Version
     - Id - Optional 
     - Sid - Optional 
     - Statement - required
     - Effect - required
-    - Principal - Required
+    - Principal - Optional
     - Action - Required
     - Resource - Required
     - Condition - Optional 
