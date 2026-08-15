@@ -40,12 +40,14 @@
 #### 2.1 IAM Policies Inheritance
 - **Inline policies** - Is simply a policy that is embedded directly into one **IAM Identity(User, group or role)** 
 - Consits of:
-    - Version
-    - Id - Optional 
-    - Sid - Optional 
-    - Statement - required
-    - Effect - required
-    - Principal - Optional
-    - Action - Required
-    - Resource - Required
-    - Condition - Optional 
+    - Version - Specifies the policy language version
+    - Id - **Optional**; Identifier for the policy 
+    - Sid - **Optional**; Optional statementr identifier
+    - Statement - **required**; Contains one or more permission statements
+    - Effect - **required**; Either `allow` or `deny`
+    - Principal - **Optional**; 
+    - Action - **Required**; AWS actions allowed or denied
+    - Resource - **Required**; AWS resource to which policy is applied
+    - Condition - **Optional**; Conditions under which policy is applied
+SAA-C03/assets/iam_permission_example.png
+#### 2.2 
