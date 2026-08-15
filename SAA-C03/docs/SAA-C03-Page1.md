@@ -54,8 +54,8 @@
 
 #### 2.2 IAM - Password Policy
 - AWS Password policy:
-    1. Set a minimum length
-    2. Require specific character types\
+    1. Set a **minimum length**
+    2. Require **specific character types**.
     3. Allow all IAM users to change their password
     4. Require users to change their password after some time 
     5. Prevent password re-use
@@ -66,3 +66,11 @@
 - MFA device options:
     1. **Virtual MFA device**: Google authenticator, Authy.
     2. **Universal 2nd Factor (U2F)**: Yubikey and this is **Physical device**
+
+#### 2.4 AWS Access Ways
+- **AWS Management Console** - Protected password + MFA
+- **AWS Command Line Interface (CLI)** - Protected by access keys 
+- **AWS Software Development Kit** - Programmatic access
+- **Access Key ID - Username**
+- **Secret Access Keys - Password** 
+
