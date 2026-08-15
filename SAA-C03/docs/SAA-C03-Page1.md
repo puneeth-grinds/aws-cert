@@ -81,3 +81,10 @@
 #### 2.6 IAM Roles for Services
 - Used for **AWS resources to perform actions on the user behalf**
 - I**AM roles are assigned with necessary permissions** and follow **Least Privilige** 
+
+#### 2.7 IAM Security Tools 
+1. **IAM Credentials Report** (account level)
+    - A report that lists all account's users and the **status of their various credentials**
+2. **IAM Access Advisor** (User Level)
+    - Shows services and **permissions that are assigned to user and when were they last used**
+    - This can be used to **revise policies** 
