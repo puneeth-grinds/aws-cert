@@ -74,6 +74,10 @@
 - **Access Key ID - Username**
 - **Secret Access Keys - Password** 
 
-#### 2.3 AWS Cloud Shell 
+#### 2.5 AWS Cloud Shell 
 - It is an **alternate for AWS CLI**
 - It is **region specific** 
+
+#### 2.6 IAM Roles for Services
+- Used for **AWS resources to perform actions on the user behalf**
+- I**AM roles are assigned with necessary permissions** and follow **Least Privilige** 
