@@ -49,5 +49,5 @@
     - Action - **Required**; AWS actions allowed or denied
     - Resource - **Required**; AWS resource to which policy is applied
     - Condition - **Optional**; Conditions under which policy is applied
-SAA-C03/assets/iam_permission_example.png
-#### 2.2 
+- IAM Permission Example:
+![IAM Permission Example](../assets/image.png)
