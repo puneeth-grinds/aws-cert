@@ -59,3 +59,10 @@
     3. Allow all IAM users to change their password
     4. Require users to change their password after some time 
     5. Prevent password re-use
+
+#### 2.3 MFA - Multi Factor Authentication
+- Used to **protect Root Accounts and IAM Users**
+- **MFA = password you know + Security device you own**
+- MFA device options:
+    1. **Virtual MFA device**: Google authenticator, Authy.
+    2. **Universal 2nd Factor (U2F)**: Yubikey and this is **Physical device**
