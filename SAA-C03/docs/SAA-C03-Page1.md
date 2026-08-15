@@ -51,3 +51,11 @@
     - Condition - **Optional**; Conditions under which policy is applied
 - IAM Permission Example:
 ![IAM Permission Example](../assets/image.png)
+
+#### 2.2 IAM - Password Policy
+- AWS Password policy:
+    1. Set a minimum length
+    2. Require specific character types\
+    3. Allow all IAM users to change their password
+    4. Require users to change their password after some time 
+    5. Prevent password re-use
