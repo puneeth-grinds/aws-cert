@@ -36,3 +36,16 @@
 - Users are people in organization, and they can be **grouped**
 - **Users can belong to multiple groups, or not belong to any group; both are possible**
 > **Effect and Action are mandatory in a IAM Permission**
+
+#### 2.1 IAM Policies Inheritance
+- **Inline policies** - Users who don't belong to any group 
+- Consits of:
+    - Version
+    - Id - Optional 
+    - Sid - Optional 
+    - Statement - required
+    - Effect - required
+    - Principal - Required
+    - Action - Required
+    - Resource - Required
+    - Condition - Optional 
