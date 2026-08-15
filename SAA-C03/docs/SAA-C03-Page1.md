@@ -74,3 +74,6 @@
 - **Access Key ID - Username**
 - **Secret Access Keys - Password** 
 
+#### 2.3 AWS Cloud Shell 
+- It is an **alternate for AWS CLI**
+- It is **region specific** 
