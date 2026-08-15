@@ -35,3 +35,4 @@
 - IAM = Identity and Access Management,  **Global service**
 - Users are people in organization, and they can be **grouped**
 - **Users can belong to multiple groups, or not belong to any group; both are possible**
+> **Effect and Action are mandatory in a IAM Permission**
