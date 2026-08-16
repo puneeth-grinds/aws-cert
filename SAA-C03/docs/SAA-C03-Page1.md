@@ -397,3 +397,5 @@ It can help you:
 - **Network card**
 - **Firewall rules**
 - **Bootstrap script** 
+
+> **Bootstapping** means launching the commands when the machine starts. It can be **run only once** when the instance first starts.
