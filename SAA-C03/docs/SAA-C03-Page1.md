@@ -438,3 +438,10 @@ It can help you:
 - Port 3389 - RDP - Remote Desktop protocol 
 
 >**Exam Tip**: If there is a timeout, it most likely means because of security group
+
+## 3.5 SSH Overview
+- It can be used in:
+   1. Mac
+   2. Linux 
+   3. Windows >= 10
+- Windows < 10 - **Putty**
