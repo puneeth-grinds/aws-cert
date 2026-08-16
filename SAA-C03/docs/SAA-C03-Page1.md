@@ -455,3 +455,12 @@ It can help you:
 - Pay for what we use 
 - **Linux or windows** - billing per second, after the first minute 
 - All other operating system is billing per hour 
+
+### 2. EC2 Reserved Instances
+- Up to **72% discount** 
+- **Reservation period - 1 year or 3 years**
+- Payment options:
+   1. No upfront
+   2. Partial upfront 
+   3. All upfront - **Maximum discount**
+- Reserved instances are **scoped regional or Zonal**
