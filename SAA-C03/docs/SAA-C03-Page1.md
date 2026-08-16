@@ -496,3 +496,4 @@ It can help you:
 - Spot prices varies between AZ's
 - **You can cancel spot instance requests that are open, active or disabled.** 
 - **Cancelling a spot instance will not terminate instances**
+- **Termination process** - Cancel spot request, and then terminate the spot requests 
