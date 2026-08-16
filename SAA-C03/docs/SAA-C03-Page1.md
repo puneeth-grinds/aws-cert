@@ -494,3 +494,5 @@ It can help you:
 - Upto **90% discounts**
 - Define **max spot price** and get the instance while **current price < max spot price**
 - Spot prices varies between AZ's
+- **You can cancel spot instance requests that are open, active or disabled.** 
+- **Cancelling a spot instance will not terminate instances**
