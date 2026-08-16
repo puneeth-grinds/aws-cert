@@ -475,3 +475,10 @@ It can help you:
 - Upto **90% discount**
 - Instances can be **lost at any time**
 
+### 5. EC2 Dedicated Hosts
+- A **physical server with EC2 instance capacity dedicated for our usage** 
+- **BYOL - Bring your own license**
+- Purchasing options:
+   1. On-Demand
+   2. Reserved Instances
+- **Most Expensive option**
