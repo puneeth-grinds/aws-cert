@@ -164,8 +164,7 @@ Each Statement can contain:
 
 ### IAM Permission Example
 
-![IAM Permission Example](../assets/image.png)
-
+![alt text](../assets/iam_policy_permission.png)
 ---
 
 ## 2.3 IAM Policies – Inline vs Managed Policies
@@ -426,3 +425,6 @@ It can help you:
 - They are responsible for controlling **inbound and outbound traffic for EC2 instances**
 - They contain only **allow** groups 
 - Security group rules can be **referenced using IP or security group names**
+- They can authorize **IP ranges**
+- Example of Security group table:
+![alt text](../assets/security_group_table.png)
