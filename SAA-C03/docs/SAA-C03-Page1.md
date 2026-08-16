@@ -436,3 +436,5 @@ It can help you:
 - Port 443 - HTTPS
 - Port 80 - HTT
 - Port 3389 - RDP - Remote Desktop protocol 
+
+>**Exam Tip**: If there is a timeout, it most likely means because of security group
