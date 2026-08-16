@@ -428,3 +428,11 @@ It can help you:
 - They can authorize **IP ranges**
 - Example of Security group table:
 ![alt text](../assets/security_group_table.png)
+
+## 3.4 Classic Ports to know 
+- Port 22 = SSH
+- Port 21 = FTP
+- Port 22 = SFTP
+- Port 443 - HTTPS
+- Port 80 - HTT
+- Port 3389 - RDP - Remote Desktop protocol 
