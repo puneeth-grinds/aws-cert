@@ -445,3 +445,6 @@ It can help you:
    2. Linux 
    3. Windows >= 10
 - Windows < 10 - **Putty**
+- **EC2 Instance Connect** - It can be used to connect to Mac, Linux and any windows version 
+- It is used **via browser**
+- Available for **Amazon linux**
