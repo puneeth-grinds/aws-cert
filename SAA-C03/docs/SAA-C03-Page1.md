@@ -386,3 +386,14 @@ It can help you:
 > **Exam Tip:** Use **IAM Credentials Report** to review credentials across IAM Users. Use **IAM Access Advisor** to identify service usage and help refine permissions.
 
 ---
+# 3. AWS EC2 - Elastic Compute Cloud
+- Elastic Compute Cloud = **Infrastructure as a Service.**
+
+## 3.1 EC2 sizing & Configuration options 
+- **Operating system (OS)**: Linux, Windows or Mac OS.
+- **compute power and cores (CPU)**
+- **Random Access Memory**
+- **Storage space**
+- **Network card**
+- **Firewall rules**
+- **Bootstrap script** 
