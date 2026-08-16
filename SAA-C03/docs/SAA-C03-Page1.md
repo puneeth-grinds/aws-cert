@@ -490,10 +490,22 @@ It can help you:
 - **Reserve On-Demand instances capacity in a specific AZ** 
 - **No time commitment and No billing discount** 
 
-## 3.6 SPOT INSTANCE REQUESTS
+## 3.7 SPOT INSTANCE REQUESTS
 - Upto **90% discounts**
 - Define **max spot price** and get the instance while **current price < max spot price**
 - Spot prices varies between AZ's
 - **You can cancel spot instance requests that are open, active or disabled.** 
 - **Cancelling a spot instance will not terminate instances**
 - **Termination process** - Cancel spot request, and then terminate the spot requests 
+
+## 3.8 SPOT FLEETS
+- **Spot fleet = set of spot instances + On-Demand instances**
+- Stops launching instances when:
+   1. **Budget is met** 
+   2. **Reaches allocation capacity** 
+- **Stratergies to allocate Spot instances**
+   1. **Lowest price**: Launch from pool from lowest price 
+   2. **diversified** - Distributed across all pools 
+   3. **capacityOptimized** - pool with optimal capacity
+   4. **priceCapacityOptimizied** - pools with highest capacity available and matches with the lowest price
+   
