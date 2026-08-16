@@ -413,3 +413,11 @@ It can help you:
 ### 2. EC2 Instances Types - Compute Optimized
 - Great for **compute-intensive tasks** 
 - Example: HPC, Gaming servers, Media transcoding
+
+### 3. EC2 Instances Types - Memory Optimized
+- Great for l**arge data sets in memory**
+- Example: Business Intelligence, Relational and non-relational databases
+
+### 4. EC2 Instances Types - Storage Optimized
+- Great for **storage intensive tasks** 
+- Example: OLTP, Relational and NoSQL Databases 
