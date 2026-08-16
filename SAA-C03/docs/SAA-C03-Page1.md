@@ -164,8 +164,7 @@ Each Statement can contain:
 
 ### IAM Permission Example
 
-![IAM Permission Example](../assets/image.png)
-
+![alt text](../assets/iam_policy_permission.png)
 ---
 
 ## 2.3 IAM Policies – Inline vs Managed Policies
@@ -386,29 +385,127 @@ It can help you:
 > **Exam Tip:** Use **IAM Credentials Report** to review credentials across IAM Users. Use **IAM Access Advisor** to identify service usage and help refine permissions.
 
 ---
+# 3. AWS EC2 - Elastic Compute Cloud
+- Elastic Compute Cloud = **Infrastructure as a Service.**
 
-# Quick Revision Summary
+## 3.1 EC2 sizing & Configuration options 
+- **Operating system (OS)**: Linux, Windows or Mac OS.
+- **compute power and cores (CPU)**
+- **Random Access Memory**
+- **Storage space**
+- **Network card**
+- **Firewall rules**
+- **Bootstrap script** 
 
-## AWS Global Infrastructure
+- **Bootstapping** means launching the commands when the machine starts. It can be **run only once** when the instance first starts.
 
-- **Region** → Geographical area containing multiple **Availability Zones**.
-- **Availability Zone** → One or more discrete **Data Centers** within a Region.
-- **Edge Location / PoP** → Used to deliver content closer to users and reduce latency.
+## 3.2 EC2 INSTANCE TYPES
+- There are 7 types of EC2 Instances 
 
-## IAM
+### 1. EC2 Instances Types - General Purpose
+- Great for **diversity workloads**
+- Balance between:
+   1. Compute
+   2. Storage
+   3. Networking 
 
-- IAM is a **Global Service**.
-- Users can belong to **multiple Groups** or **no Groups**.
-- IAM Policies define **permissions**.
-- **Inline Policies** are attached directly to one IAM identity.
-- **Managed Policies** can be reused across multiple identities.
-- IAM Roles provide **temporary credentials**.
+### 2. EC2 Instances Types - Compute Optimized
+- Great for **compute-intensive tasks** 
+- Example: HPC, Gaming servers, Media transcoding
 
-## Security
+### 3. EC2 Instances Types - Memory Optimized
+- Great for l**arge data sets in memory**
+- Example: Business Intelligence, Relational and non-relational databases
 
-- Enable **MFA** for the Root User.
-- Follow the **Principle of Least Privilege**.
-- Avoid hardcoding **Access Keys**.
-- Prefer **IAM Roles** for AWS services accessing other AWS services.
-- Use **IAM Credentials Report** for credential auditing.
-- Use **IAM Access Advisor** to identify service usage and help refine permissions.
+### 4. EC2 Instances Types - Storage Optimized
+- Great for **storage intensive tasks** 
+- Example: OLTP, Relational and NoSQL Databases 
+
+## 3.3 Introduction to Security Groups 
+- They are responsible for controlling **inbound and outbound traffic for EC2 instances**
+- They contain only **allow** groups 
+- Security group rules can be **referenced using IP or security group names**
+- They can authorize **IP ranges**
+- Example of Security group table:
+![alt text](../assets/security_group_table.png)
+
+## 3.4 Classic Ports to know 
+- Port 22 = SSH
+- Port 21 = FTP
+- Port 22 = SFTP
+- Port 443 - HTTPS
+- Port 80 - HTT
+- Port 3389 - RDP - Remote Desktop protocol 
+
+>**Exam Tip**: If there is a timeout, it most likely means because of security group
+
+## 3.5 SSH Overview
+- It can be used in:
+   1. Mac
+   2. Linux 
+   3. Windows >= 10
+- Windows < 10 - **Putty**
+- **EC2 Instance Connect** - It can be used to connect to Mac, Linux and any windows version 
+- It is used **via browser**
+- Available for **Amazon linux**
+
+## 3.6 EC2 Instances Purchasing Options 
+
+### 1. EC2 On Demand
+- Pay for what we use 
+- **Linux or windows** - billing per second, after the first minute 
+- All other operating system is billing per hour 
+
+### 2. EC2 Reserved Instances
+- Up to **72% discount** 
+- **Reservation period - 1 year or 3 years**
+- Payment options:
+   1. No upfront
+   2. Partial upfront 
+   3. All upfront - **Maximum discount**
+- Reserved instances are **scoped regional or Zonal**
+
+### 3. EC2 Savings Plan 
+- Upto **72% discount**
+- **Commit to certain type of usage** ($10/hour for 1 or 3 years)
+- Any usage beyound is billed On-Demand 
+- commit to a **certain family and region** 
+
+### 4. EC2 Spot Instances
+- Upto **90% discount**
+- Instances can be **lost at any time**
+
+### 5. EC2 Dedicated Hosts
+- A **physical server with EC2 instance capacity dedicated for our usage** 
+- **BYOL - Bring your own license**
+- Purchasing options:
+   1. On-Demand
+   2. Reserved Instances
+- **Most Expensive option**
+
+### 6. EC2 Dedicated Instances
+- Instances run on **hardware that's dedicated to you**
+
+### 7. EC2 Capacity Reservations
+- **Reserve On-Demand instances capacity in a specific AZ** 
+- **No time commitment and No billing discount** 
+
+## 3.7 SPOT INSTANCE REQUESTS
+- Upto **90% discounts**
+- Define **max spot price** and get the instance while **current price < max spot price**
+- Spot prices varies between AZ's
+- **You can cancel spot instance requests that are open, active or disabled.** 
+- **Cancelling a spot instance will not terminate instances**
+- **Termination process** - Cancel spot request, and then terminate the spot requests 
+
+## 3.8 SPOT FLEETS
+- **Spot fleet = set of spot instances + On-Demand instances**
+- Stops launching instances when:
+   1. **Budget is met** 
+   2. **Reaches allocation capacity** 
+
+### Stratergies to allocate Spot instances
+   1. **Lowest price**: Launch from pool from lowest price 
+   2. **diversified** - Distributed across all pools 
+   3. **capacityOptimized** - pool with optimal capacity
+   4. **priceCapacityOptimizied** - pools with highest capacity available and matches with the lowest price
