@@ -421,3 +421,8 @@ It can help you:
 ### 4. EC2 Instances Types - Storage Optimized
 - Great for **storage intensive tasks** 
 - Example: OLTP, Relational and NoSQL Databases 
+
+## 3.3 Introduction to Security Groups 
+- They are responsible for controlling **inbound and outbound traffic for EC2 instances**
+- They contain only **allow** groups 
+- Security group rules can be **referenced using IP or security group names**
