@@ -471,3 +471,7 @@ It can help you:
 - Any usage beyound is billed On-Demand 
 - commit to a **certain family and region** 
 
+### 4. EC2 Spot Instances
+- Upto **90% discount**
+- Instances can be **lost at any time**
+
