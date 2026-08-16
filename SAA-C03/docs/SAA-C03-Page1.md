@@ -464,3 +464,10 @@ It can help you:
    2. Partial upfront 
    3. All upfront - **Maximum discount**
 - Reserved instances are **scoped regional or Zonal**
+
+### 3. EC2 Savings Plan 
+- Upto **72% discount**
+- **Commit to certain type of usage** ($10/hour for 1 or 3 years)
+- Any usage beyound is billed On-Demand 
+- commit to a **certain family and region** 
+
