@@ -448,3 +448,10 @@ It can help you:
 - **EC2 Instance Connect** - It can be used to connect to Mac, Linux and any windows version 
 - It is used **via browser**
 - Available for **Amazon linux**
+
+## 3.6 EC2 Instances Purchasing Options 
+
+### 1. EC2 On Demand
+- Pay for what we use 
+- **Linux or windows** - billing per second, after the first minute 
+- All other operating system is billing per hour 
