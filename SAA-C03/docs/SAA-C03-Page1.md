@@ -398,4 +398,7 @@ It can help you:
 - **Firewall rules**
 - **Bootstrap script** 
 
-> **Bootstapping** means launching the commands when the machine starts. It can be **run only once** when the instance first starts.
+- **Bootstapping** means launching the commands when the machine starts. It can be **run only once** when the instance first starts.
+
+## 3.2 EC2 INSTANCE TYPES
+- There are 7 types of EC2 Instances 
