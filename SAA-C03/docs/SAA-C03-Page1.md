@@ -503,9 +503,9 @@ It can help you:
 - Stops launching instances when:
    1. **Budget is met** 
    2. **Reaches allocation capacity** 
-- **Stratergies to allocate Spot instances**
+
+### Stratergies to allocate Spot instances
    1. **Lowest price**: Launch from pool from lowest price 
    2. **diversified** - Distributed across all pools 
    3. **capacityOptimized** - pool with optimal capacity
    4. **priceCapacityOptimizied** - pools with highest capacity available and matches with the lowest price
-   
