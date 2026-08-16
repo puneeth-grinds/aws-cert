@@ -402,3 +402,14 @@ It can help you:
 
 ## 3.2 EC2 INSTANCE TYPES
 - There are 7 types of EC2 Instances 
+
+### 1. EC2 Instances Types - General Purpose
+- Great for **diversity workloads**
+- Balance between:
+   1. Compute
+   2. Storage
+   3. Networking 
+
+### 2. EC2 Instances Types - Compute Optimized
+- Great for **compute-intensive tasks** 
+- Example: HPC, Gaming servers, Media transcoding
