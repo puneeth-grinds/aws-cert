@@ -486,6 +486,11 @@ It can help you:
 ### 6. EC2 Dedicated Instances
 - Instances run on **hardware that's dedicated to you**
 
-### 6. EC2 Capacity Reservations
+### 7. EC2 Capacity Reservations
 - **Reserve On-Demand instances capacity in a specific AZ** 
 - **No time commitment and No billing discount** 
+
+## 3.6 SPOT INSTANCE REQUESTS
+- Upto **90% discounts**
+- Define **max spot price** and get the instance while **current price < max spot price**
+- Spot prices varies between AZ's
