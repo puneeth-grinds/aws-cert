@@ -386,29 +386,3 @@ It can help you:
 > **Exam Tip:** Use **IAM Credentials Report** to review credentials across IAM Users. Use **IAM Access Advisor** to identify service usage and help refine permissions.
 
 ---
-
-# Quick Revision Summary
-
-## AWS Global Infrastructure
-
-- **Region** → Geographical area containing multiple **Availability Zones**.
-- **Availability Zone** → One or more discrete **Data Centers** within a Region.
-- **Edge Location / PoP** → Used to deliver content closer to users and reduce latency.
-
-## IAM
-
-- IAM is a **Global Service**.
-- Users can belong to **multiple Groups** or **no Groups**.
-- IAM Policies define **permissions**.
-- **Inline Policies** are attached directly to one IAM identity.
-- **Managed Policies** can be reused across multiple identities.
-- IAM Roles provide **temporary credentials**.
-
-## Security
-
-- Enable **MFA** for the Root User.
-- Follow the **Principle of Least Privilege**.
-- Avoid hardcoding **Access Keys**.
-- Prefer **IAM Roles** for AWS services accessing other AWS services.
-- Use **IAM Credentials Report** for credential auditing.
-- Use **IAM Access Advisor** to identify service usage and help refine permissions.
