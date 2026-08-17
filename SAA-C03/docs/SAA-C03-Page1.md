@@ -532,3 +532,4 @@ This session covers topic that is needed for SAA-C03 level
 
 **ELASTIC IP**
 - It is used to have a **fixed Public IP**
+- We can have only **5 Elastic IP** (can be increased)
