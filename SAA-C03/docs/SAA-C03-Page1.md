@@ -525,6 +525,6 @@ This session covers topic that is needed for SAA-C03 level
 - Identified publicly 
 
 **PRIVATE IP**
-- It means **machine can be identified on a private network only.
-- IP must be unique inside the private network 
+- It means **machine can be identified on a private network only.**
+- IP must be **unique inside the private network** 
 - Two different private can have the same IPs
