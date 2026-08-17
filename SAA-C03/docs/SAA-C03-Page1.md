@@ -517,3 +517,14 @@ This session covers topic that is needed for SAA-C03 level
 - We have two types of IP
    1. IPv4: `1.160.10.240`
    2. IPv6: `2001:0db8:0000:0000:0000:0000:1428:57ab`
+- IPv4 - 3.7b available services 
+- IPv6 - Almost unlimited 
+
+**PUBLIC IP**
+- It means **machine can be indentified on the internet**
+- Identified publicly 
+
+**PRIVATE IP**
+- It means **machine can be identified on a private network only.
+- IP must be unique inside the private network 
+- Two different private can have the same IPs
