@@ -602,3 +602,9 @@ This section talks about EBS volumes, snapshot, AMI and many more.
 **Fast Snapshot Restore (FSR)**
 - **Forceful initialization of snapshot**
 - **Expensive**
+---
+
+### 5.3 AMI Overview
+- **AMI = Amazon Machine Image**
+- Provide **customization of EC2 instances** 
+- **Specific for region** 
