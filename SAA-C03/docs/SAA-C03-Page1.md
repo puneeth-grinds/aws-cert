@@ -533,3 +533,12 @@ This session covers topic that is needed for SAA-C03 level
 **ELASTIC IP**
 - It is used to have a **fixed Public IP**
 - We can have only **5 Elastic IP** (can be increased)
+
+### 4.2 Placement Groups
+- This defines the **placement of EC2 instances**, and they are defined by stratergies.
+
+**Cluster stratergy**
+- All of the **EC2 are going to be in the same AZ**
+- Provides **great networking, low latency** 
+- **Cons**: If AZ fails, all the instances fail 
+- **Use case**: Big data Jobs
