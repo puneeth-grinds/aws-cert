@@ -642,3 +642,15 @@ There are 6 volumes types:
 - **io2 Block Express**:
    1. **sub-millisecond latency**
    2. Max IOPS: **256,000** with I**OPS:GiB ratio of 1,000:1**
+
+**Hard Disk Drives (HDD)**
+- Cannot be a boot volume
+- 125GiB to 16 TiB
+**Throughput optimized HDD**
+   1. **Max throughput: 500MiB/s - max IOPS 500**
+   2. Used for big data 
+
+**Cold HDD (sc1)**:
+   1. For data that is infrequently accessed
+   2. Scenarios where lowest cost is important 
+   3. **Max throughput 250 MiB/s - max IOPS 250**
