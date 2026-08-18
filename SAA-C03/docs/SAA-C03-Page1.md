@@ -608,3 +608,14 @@ This section talks about EBS volumes, snapshot, AMI and many more.
 - **AMI = Amazon Machine Image**
 - Provide **customization of EC2 instances** 
 - **Specific for region** 
+
+---
+
+### 5.4 EC2 Instance Store
+- **Data is lost on EC2 termination** 
+- Can be **attached to 100s of EC2 instances**
+- Can be **attached instances across multiple AZ**
+> **Exam Tip**: It is a ephemeral storage.
+----
+
+### 5.5 EBS Volume Types
