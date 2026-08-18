@@ -622,7 +622,9 @@ This section talks about EBS volumes, snapshot, AMI and many more.
 There are 6 volumes types:
 
 **gp2/gp3 - General Purpose SSD**
-- **Cost effective, low latency** 
+
+
+**Cost effective, low latency** 
 - **gp3**: 
    1. newer version, **3000 IOPS** and **throughput** of **125 MiB/s**
    2. Can be **increase upto 16000** and **throughput** up tp **1000 MiB/s**.
@@ -631,3 +633,12 @@ There are 6 volumes types:
    1. small gp2 volumes can burst upto **IOPS 3,000**
    2. can be extended till **16,000**
 > **Exam tip**: **gp3 can independently setup IOPS an throughput, while gp2 is linked**
+
+**Provisioned IOPS SSD (PIOPS)**
+- Used for **applications that need more than 16,000 IOPS**
+- **Use case**: **database workfloads**
+- **io1**:
+   1. Max IOPS: **64,000 for Nitro EC2** instances and **32,000 for others**
+- **io2 Block Express**:
+   1. **sub-millisecond latency**
+   2. Max IOPS: **256,000** with I**OPS:GiB ratio of 1,000:1**
