@@ -97,9 +97,8 @@ Common AWS Global services include:
 
 > **Important:** **Amazon Rekognition is a Regional service.**
 
----
 
-# 2. IAM & AWS CLI
+## 2. IAM & AWS CLI
 
 IAM stands for **Identity and Access Management**.
 
@@ -112,16 +111,16 @@ IAM is a **Global AWS service**.
 
 ---
 
-## 2.1 IAM Users and Groups
+### 2.1 IAM Users and Groups
 
-### IAM Users
+**IAM Users**
 
 IAM Users typically represent:
 
 - **People within an organization**
 - Applications that require **long-term credentials**
 
-### IAM Groups
+**IAM Groups**
 
 IAM Groups are collections of IAM Users.
 
@@ -133,7 +132,7 @@ Important rules:
 
 ---
 
-## 2.2 IAM Policies
+### 2.2 IAM Policies
 
 IAM Policies define **permissions**.
 
@@ -142,6 +141,7 @@ Policies can be attached to:
 - **IAM Users**
 - **IAM Groups**
 - **IAM Roles**
+---
 
 ### IAM Policy Structure
 
@@ -162,14 +162,14 @@ Each Statement can contain:
 
 > **Important:** `Principal` is generally used in **Resource-Based Policies** and **IAM Role Trust Policies**. It is not normally included in an **Identity-Based Policy**.
 
-### IAM Permission Example
+IAM Permission Example
 
 ![alt text](../assets/iam_policy_permission.png)
 ---
 
-## 2.3 IAM Policies – Inline vs Managed Policies
+### 2.3 IAM Policies – Inline vs Managed Policies
 
-### Inline Policies
+**Inline Policies**
 
 An **Inline Policy** is embedded directly into a single IAM identity.
 
@@ -185,17 +185,17 @@ Characteristics:
 - Cannot be reused across multiple identities.
 - Deleted when the associated identity is deleted.
 
-### Managed Policies
+**Managed Policies**
 
 Managed Policies are standalone IAM policies that can be attached to multiple IAM identities.
 
 There are two types:
 
-#### AWS Managed Policies
+**AWS Managed Policies**
 
 Policies created and managed by **AWS**.
 
-#### Customer Managed Policies
+**Customer Managed Policies**
 
 Policies created and managed by the **customer**.
 
@@ -203,7 +203,7 @@ Policies created and managed by the **customer**.
 
 ---
 
-## 2.4 IAM Password Policy
+### 2.4 IAM Password Policy
 
 AWS allows you to configure an **IAM Password Policy**.
 
@@ -217,7 +217,7 @@ You can:
 
 ---
 
-## 2.5 MFA – Multi-Factor Authentication
+### 2.5 MFA – Multi-Factor Authentication
 
 MFA adds an additional layer of security.
 
@@ -231,9 +231,10 @@ MFA should be enabled for:
 - **AWS Root User**
 - **IAM Users** with console access
 
-### MFA Device Options
+**MFA Device Options**
+There are two MFA options 
 
-#### Virtual MFA Device
+**Virtual MFA Device**
 
 Examples:
 
@@ -242,7 +243,7 @@ Examples:
 
 These applications generate temporary authentication codes.
 
-#### Hardware Security Key
+**Hardware Security Key**
 
 Example:
 
@@ -252,7 +253,7 @@ A physical security device used for authentication.
 
 ---
 
-## 2.6 AWS Access Methods
+### 2.6 AWS Access Methods
 
 AWS can be accessed in multiple ways:
 
@@ -262,7 +263,7 @@ AWS can be accessed in multiple ways:
 
 ---
 
-### AWS Management Console
+**AWS Management Console**
 
 The AWS Management Console is a web-based interface for managing AWS resources.
 
@@ -274,7 +275,7 @@ Authentication typically involves:
 
 ---
 
-### AWS Command Line Interface (CLI)
+**AWS Command Line Interface (CLI)**
 
 The AWS CLI allows users to interact with AWS using commands.
 
@@ -294,7 +295,7 @@ IAM Access Keys consist of:
 
 ---
 
-### AWS Software Development Kit (SDK)
+**AWS Software Development Kit (SDK)**
 
 AWS SDKs allow applications to interact with AWS programmatically.
 
@@ -307,7 +308,7 @@ AWS provides SDKs for languages such as:
 
 ---
 
-## 2.7 AWS CloudShell
+### 2.7 AWS CloudShell
 
 AWS CloudShell is a browser-based shell environment that allows you to run **AWS CLI commands** without installing the AWS CLI locally.
 
@@ -322,7 +323,7 @@ Key points:
 
 ---
 
-## 2.8 IAM Roles for Services
+### 2.8 IAM Roles for Services
 
 IAM Roles provide **temporary credentials** that can be assumed by:
 
@@ -348,9 +349,9 @@ Example:
 
 ---
 
-## 2.9 IAM Security Tools
+### 2.9 IAM Security Tools
 
-### IAM Credentials Report
+**IAM Credentials Report**
 
 The **IAM Credentials Report** is an **Account-Level** report.
 
@@ -366,7 +367,7 @@ It lists IAM Users and the **status of their credentials**, including:
 
 ---
 
-### IAM Access Advisor
+**IAM Access Advisor**
 
 IAM Access Advisor helps identify services that have been accessed by an IAM identity.
 
@@ -385,10 +386,10 @@ It can help you:
 > **Exam Tip:** Use **IAM Credentials Report** to review credentials across IAM Users. Use **IAM Access Advisor** to identify service usage and help refine permissions.
 
 ---
-# 3. AWS EC2 - Elastic Compute Cloud
+## 3. AWS EC2 - Elastic Compute Cloud
 - Elastic Compute Cloud = **Infrastructure as a Service.**
 
-## 3.1 EC2 sizing & Configuration options 
+### 3.1 EC2 sizing & Configuration options 
 - **Operating system (OS)**: Linux, Windows or Mac OS.
 - **compute power and cores (CPU)**
 - **Random Access Memory**
@@ -399,7 +400,7 @@ It can help you:
 
 - **Bootstapping** means launching the commands when the machine starts. It can be **run only once** when the instance first starts.
 
-## 3.2 EC2 INSTANCE TYPES
+### 3.2 EC2 INSTANCE TYPES
 - There are 7 types of EC2 Instances 
 
 ### 1. EC2 Instances Types - General Purpose
@@ -509,3 +510,198 @@ It can help you:
    2. **diversified** - Distributed across all pools 
    3. **capacityOptimized** - pool with optimal capacity
    4. **priceCapacityOptimizied** - pools with highest capacity available and matches with the lowest price
+
+## 4. EC2 SOLUTIONS ARCHITECT ASSOCIATE LEVEL 
+This session covers topic that is needed for SAA-C03 level
+
+### 4.1 Private vs Public IP (IPv4)
+- We have two types of IP
+   1. IPv4: `1.160.10.240`
+   2. IPv6: `2001:0db8:0000:0000:0000:0000:1428:57ab`
+- IPv4 - 3.7b available services 
+- IPv6 - Almost unlimited 
+
+**PUBLIC IP**
+- It means **machine can be indentified on the internet**
+- Identified publicly 
+
+**PRIVATE IP**
+- It means **machine can be identified on a private network only.**
+- IP must be **unique inside the private network** 
+- Two different private can have the same IPs
+- Only **specified range of IP can be uses**
+
+**ELASTIC IP**
+- It is used to have a **fixed Public IP**
+- We can have only **5 Elastic IP** (can be increased)
+-----
+
+### 4.2 Placement Groups
+- This defines the **placement of EC2 instances**, and they are defined by stratergies.
+
+**Cluster stratergy**
+- All of the **EC2 are going to be in the same AZ**
+- Provides **great networking, low latency** 
+- **Cons**: If AZ fails, all the instances fail 
+- **Use case**: Big data Jobs
+![Cluster stratergy image](../assets/cluster_stratergy.png)
+
+**Spread Startergy**
+- All the **EC2 instances are located in different hardware/AZ**
+- **Reduced risk in simultaneous failure**
+- **Cons**: Limited to 7 instances per AZ
+- **Use case:** Critical applications that need high availability 
+![spread stratergy](../assets/spread_stratergy.png)
+
+**Partition Stratergy**
+- We can have **instances spread across multiple partitions inside a AZ**
+- We can have upto to **7 partitions per AZ in the same region**
+- **Use case**: Big data like Cassandra, Kafka, HDFS
+![alt text](../assets/spread_stratergy.png)
+-----
+
+### 4.3 Elastic Network Interface (ENI)
+- Logical component in VPC and gives **virutal network card** for EC2 instances.
+- They provide:
+   1. **Private IP, and one or more secondary IPv4**
+   2. **One Elastic IPv4**
+   3. **One or more Secruity group and MAC address**
+- They are **bound to specific AZ**
+- **ENI can be moved across EC2 instances for failover purposes**
+----
+### 4.4 EC2 Hibernate 
+- When an EC2 instance is hiberanated, the RAM(in-memory) state is preserved
+- **Faster reboot**
+- **Under the hood**: RAM is dumped into the EBS volume 
+- **Use Cases**: Long-running processes
+> **Exam Tip**: An instance cannot be hibernated for more than 60 days 
+---
+## 5. EBS OVERVIEW
+This section talks about EBS volumes, snapshot, AMI and many more.
+
+### 5.1 What is EBS Volume 
+- It is a **network drive**that can be attached to EC2 instances
+- It is used to **presist data** of an EC2 instance
+- Can be **attached to a single EC2 instance at a time** 
+- It is **bound to a single AZ**
+![alt text](../assets/ebs_volume.png)
+> **Exam Tip**: Two EBS Volumes can be attached to a single EC2 instance
+---
+
+### 5.2 EBS Snapshots
+- It is a **backup of EBS volume**
+- **Can be copied across regions and AZ** 
+
+**EBS Snapshot Archive**
+- **75% cheaper**
+- **24 to 72 hours** for restoring 
+
+**Recycle bin for EBS snapshort**
+- Setup to **recover** snapshots from **accidental deletion.**
+- **Retention** period is **1 day to 1 year**
+
+**Fast Snapshot Restore (FSR)**
+- **Forceful initialization of snapshot**
+- **Expensive**
+---
+
+### 5.3 AMI Overview
+- **AMI = Amazon Machine Image**
+- Provide **customization of EC2 instances** 
+- **Specific for region** 
+
+---
+
+### 5.4 EC2 Instance Store
+- **Data is lost on EC2 termination** 
+- Can be **attached to 100s of EC2 instances**
+- Can be **attached instances across multiple AZ**
+> **Exam Tip**: It is a ephemeral storage.
+----
+
+### 5.5 EBS Volume Types
+There are 6 volumes types:
+
+**gp2/gp3 - General Purpose SSD**
+
+
+**Cost effective, low latency** 
+- **gp3**: 
+   1. newer version, **3000 IOPS** and **throughput** of **125 MiB/s**
+   2. Can be **increase upto 16000** and **throughput** up tp **1000 MiB/s**.
+
+- **gp2**:
+   1. small gp2 volumes can burst upto **IOPS 3,000**
+   2. can be extended till **16,000**
+> **Exam tip**: **gp3 can independently setup IOPS an throughput, while gp2 is linked**
+
+**Provisioned IOPS SSD (PIOPS)**
+- Used for **applications that need more than 16,000 IOPS**
+- **Use case**: **database workfloads**
+- **io1**:
+   1. Max IOPS: **64,000 for Nitro EC2** instances and **32,000 for others**
+- **io2 Block Express**:
+   1. **sub-millisecond latency**
+   2. Max IOPS: **256,000** with I**OPS:GiB ratio of 1,000:1**
+
+**Hard Disk Drives (HDD)**
+- Cannot be a boot volume
+- 125GiB to 16 TiB
+**Throughput optimized HDD**
+   1. **Max throughput: 500MiB/s - max IOPS 500**
+   2. Used for big data 
+
+**Cold HDD (sc1)**:
+   1. For data that is infrequently accessed
+   2. Scenarios where lowest cost is important 
+   3. **Max throughput 250 MiB/s - max IOPS 250**
+----
+
+### 5.6 Multi-Attach EBS volume 
+- **EBS volumes can be attached to multiple EC2 instances**
+- **Allowed only for io1 and io2**
+- **Scoped for a single AZ**
+- **Maximum of 16 EC2 instances at a time** 
+
+---
+### 5.7 EBS Encryption 
+- **Data at rest is encrypted**
+- **All snapshots are encrypted**
+- Leverages **KMS for encryption**
+
+**Encrypt and Unencrypt EBS volume**
+1. Create an EBS snapshot of a volume 
+2. **Encrypt using a copy** 
+3. Create **new volume from the snapshot** (volume also will be encrypted)
+
+---
+
+### 5.8 AWS EFS - Elastic File System 
+- It is a **managed NFS (Network File system)** and can be **mounted on multiple EC2 instances.**
+- **Works across multiple AZ**
+- **Expensive**
+- **Use case**: wordpress
+> **Exam Tip**: **Only for Linux AMI, not available for Windows**
+
+**EFS Storage Classes**
+- **Standard**:For **frequently accessed files** 
+- **EFS-IA**: Lower prices to restore the files 
+- **Archive**: Rarely accessed data, **50% cheaper**
+
+**Availability and durability**
+- **Standard**: Multi AZ,**best for prod**
+- **One zone**: One AZ, and for test and cheaper
+
+
+### 5.9 EBS vs EFS
+**EBS**
+   1. One instance at a time (except io1, io2)
+   2. locked at AZ level
+
+**EFS**
+   1. 100s of EC2 instances
+   2. Across AZ
+   3. Expensive 
+
+> **Exam Tip**: Deleting an EC2 instance, by default r**oot volume will be deleted**, but **EBS volume wont be deleted by default**
+> **Exam Tip**: `gp2`, `gp3` and `io1`,`io2` can be used as boot volume at the time of Ec2 instance creation 
