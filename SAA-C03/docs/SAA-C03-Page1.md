@@ -542,3 +542,11 @@ This session covers topic that is needed for SAA-C03 level
 - Provides **great networking, low latency** 
 - **Cons**: If AZ fails, all the instances fail 
 - **Use case**: Big data Jobs
+![Cluster stratergy image](../assets/cluster_stratergy.png)
+
+**Spread Startergy**
+- All the **EC2 instances are located in different hardware/AZ**
+- **Reduced risk in simultaneous failure**
+- **Cons**: Limited to 7 instances per AZ
+- **Use case:** Critical applications that need high availability 
+![spread stratergy](spread_stratergy.png)
