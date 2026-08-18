@@ -663,3 +663,6 @@ There are 6 volumes types:
 - **Maximum of 16 EC2 instances at a time** 
 
 ---
+### 5.7 EBS Encryption 
+- **Data at rest is encrypted**
+- **All snapshots are encrypted**
