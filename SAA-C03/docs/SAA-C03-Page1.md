@@ -573,3 +573,13 @@ This session covers topic that is needed for SAA-C03 level
 - **Faster reboot**
 - **Under the hood**: RAM is dumped into the EBS volume 
 - **Use Cases**: Long-running processes
+> **Exam Tip**: An instance cannot be hibernated for more than 60 days 
+---
+## 5. EBS OVERVIEW
+This section talks about EBS volumes, snapshot, AMI and many more.
+
+### 5.1 What is EBS Volume 
+- It is a **network drive**that can be attached to EC2 instances
+- It is used to **presist data** of an EC2 instance
+- Can be **attached to a single EC2 instance at a time** 
+- It is **bound to a single AZ**
