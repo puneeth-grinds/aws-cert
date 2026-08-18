@@ -619,3 +619,15 @@ This section talks about EBS volumes, snapshot, AMI and many more.
 ----
 
 ### 5.5 EBS Volume Types
+There are 6 volumes types:
+
+**gp2/gp3 - General Purpose SSD**
+- **Cost effective, low latency** 
+- **gp3**: 
+   1. newer version, **3000 IOPS** and **throughput** of **125 MiB/s**
+   2. Can be **increase upto 16000** and **throughput** up tp **1000 MiB/s**.
+
+- **gp2**:
+   1. small gp2 volumes can burst upto **IOPS 3,000**
+   2. can be extended till **16,000**
+> **Exam tip**: **gp3 can independently setup IOPS an throughput, while gp2 is linked**
