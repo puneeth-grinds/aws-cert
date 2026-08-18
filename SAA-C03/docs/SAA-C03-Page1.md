@@ -681,3 +681,12 @@ There are 6 volumes types:
 - **Expensive**
 - **Use case**: wordpress
 > **Exam Tip**: **Only for Linux AMI, not available for Windows**
+
+**EFS Storage Classes**
+- **Standard**:For **frequently accessed files** 
+- **EFS-IA**: Lower prices to restore the files 
+- **Archive**: Rarely accessed data, **50% cheaper**
+
+**Availability and durability**
+- **Standard**: Multi AZ,**best for prod**
+- **One zone**: One AZ, and for test and cheaper
