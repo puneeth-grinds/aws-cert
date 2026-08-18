@@ -566,4 +566,10 @@ This session covers topic that is needed for SAA-C03 level
    2. **One Elastic IPv4**
    3. **One or more Secruity group and MAC address**
 - They are **bound to specific AZ**
-- E**NI can be moved across EC2 instances for failover purposes**
+- **ENI can be moved across EC2 instances for failover purposes**
+----
+### 4.4 EC2 Hibernate 
+- When an EC2 instance is hiberanated, the RAM(in-memory) state is preserved
+- **Faster reboot**
+- **Under the hood**: RAM is dumped into the EBS volume 
+- **Use Cases**: Long-running processes
