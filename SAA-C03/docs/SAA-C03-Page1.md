@@ -666,3 +666,10 @@ There are 6 volumes types:
 ### 5.7 EBS Encryption 
 - **Data at rest is encrypted**
 - **All snapshots are encrypted**
+- Leverages **KMS for encryption**
+
+**Encrypt and Unencrypt EBS volume**
+1. Create an EBS snapshot of a volume 
+2. **Encrypt using a copy** 
+3. Create **new volume from the snapshot** (volume also will be encrypted)
+4. 
