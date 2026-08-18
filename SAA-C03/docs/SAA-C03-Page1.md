@@ -97,9 +97,8 @@ Common AWS Global services include:
 
 > **Important:** **Amazon Rekognition is a Regional service.**
 
----
 
-# 2. IAM & AWS CLI
+## 2. IAM & AWS CLI
 
 IAM stands for **Identity and Access Management**.
 
@@ -112,16 +111,16 @@ IAM is a **Global AWS service**.
 
 ---
 
-## 2.1 IAM Users and Groups
+### 2.1 IAM Users and Groups
 
-### IAM Users
+**IAM Users**
 
 IAM Users typically represent:
 
 - **People within an organization**
 - Applications that require **long-term credentials**
 
-### IAM Groups
+**IAM Groups**
 
 IAM Groups are collections of IAM Users.
 
@@ -133,7 +132,7 @@ Important rules:
 
 ---
 
-## 2.2 IAM Policies
+### 2.2 IAM Policies
 
 IAM Policies define **permissions**.
 
@@ -142,6 +141,7 @@ Policies can be attached to:
 - **IAM Users**
 - **IAM Groups**
 - **IAM Roles**
+---
 
 ### IAM Policy Structure
 
@@ -162,14 +162,14 @@ Each Statement can contain:
 
 > **Important:** `Principal` is generally used in **Resource-Based Policies** and **IAM Role Trust Policies**. It is not normally included in an **Identity-Based Policy**.
 
-### IAM Permission Example
+IAM Permission Example
 
 ![alt text](../assets/iam_policy_permission.png)
 ---
 
-## 2.3 IAM Policies – Inline vs Managed Policies
+### 2.3 IAM Policies – Inline vs Managed Policies
 
-### Inline Policies
+**Inline Policies**
 
 An **Inline Policy** is embedded directly into a single IAM identity.
 
@@ -185,17 +185,17 @@ Characteristics:
 - Cannot be reused across multiple identities.
 - Deleted when the associated identity is deleted.
 
-### Managed Policies
+**Managed Policies**
 
 Managed Policies are standalone IAM policies that can be attached to multiple IAM identities.
 
 There are two types:
 
-#### AWS Managed Policies
+**AWS Managed Policies**
 
 Policies created and managed by **AWS**.
 
-#### Customer Managed Policies
+**Customer Managed Policies**
 
 Policies created and managed by the **customer**.
 
@@ -203,7 +203,7 @@ Policies created and managed by the **customer**.
 
 ---
 
-## 2.4 IAM Password Policy
+### 2.4 IAM Password Policy
 
 AWS allows you to configure an **IAM Password Policy**.
 
@@ -217,7 +217,7 @@ You can:
 
 ---
 
-## 2.5 MFA – Multi-Factor Authentication
+### 2.5 MFA – Multi-Factor Authentication
 
 MFA adds an additional layer of security.
 
@@ -231,9 +231,10 @@ MFA should be enabled for:
 - **AWS Root User**
 - **IAM Users** with console access
 
-### MFA Device Options
+**MFA Device Options**
+There are two MFA options 
 
-#### Virtual MFA Device
+**Virtual MFA Device**
 
 Examples:
 
@@ -242,7 +243,7 @@ Examples:
 
 These applications generate temporary authentication codes.
 
-#### Hardware Security Key
+**Hardware Security Key**
 
 Example:
 
@@ -252,7 +253,7 @@ A physical security device used for authentication.
 
 ---
 
-## 2.6 AWS Access Methods
+### 2.6 AWS Access Methods
 
 AWS can be accessed in multiple ways:
 
@@ -262,7 +263,7 @@ AWS can be accessed in multiple ways:
 
 ---
 
-### AWS Management Console
+**AWS Management Console**
 
 The AWS Management Console is a web-based interface for managing AWS resources.
 
@@ -274,7 +275,7 @@ Authentication typically involves:
 
 ---
 
-### AWS Command Line Interface (CLI)
+**AWS Command Line Interface (CLI)**
 
 The AWS CLI allows users to interact with AWS using commands.
 
@@ -294,7 +295,7 @@ IAM Access Keys consist of:
 
 ---
 
-### AWS Software Development Kit (SDK)
+**AWS Software Development Kit (SDK)**
 
 AWS SDKs allow applications to interact with AWS programmatically.
 
@@ -307,7 +308,7 @@ AWS provides SDKs for languages such as:
 
 ---
 
-## 2.7 AWS CloudShell
+### 2.7 AWS CloudShell
 
 AWS CloudShell is a browser-based shell environment that allows you to run **AWS CLI commands** without installing the AWS CLI locally.
 
@@ -322,7 +323,7 @@ Key points:
 
 ---
 
-## 2.8 IAM Roles for Services
+### 2.8 IAM Roles for Services
 
 IAM Roles provide **temporary credentials** that can be assumed by:
 
@@ -348,9 +349,9 @@ Example:
 
 ---
 
-## 2.9 IAM Security Tools
+### 2.9 IAM Security Tools
 
-### IAM Credentials Report
+**IAM Credentials Report**
 
 The **IAM Credentials Report** is an **Account-Level** report.
 
@@ -366,7 +367,7 @@ It lists IAM Users and the **status of their credentials**, including:
 
 ---
 
-### IAM Access Advisor
+**IAM Access Advisor**
 
 IAM Access Advisor helps identify services that have been accessed by an IAM identity.
 
@@ -385,10 +386,10 @@ It can help you:
 > **Exam Tip:** Use **IAM Credentials Report** to review credentials across IAM Users. Use **IAM Access Advisor** to identify service usage and help refine permissions.
 
 ---
-# 3. AWS EC2 - Elastic Compute Cloud
+## 3. AWS EC2 - Elastic Compute Cloud
 - Elastic Compute Cloud = **Infrastructure as a Service.**
 
-## 3.1 EC2 sizing & Configuration options 
+### 3.1 EC2 sizing & Configuration options 
 - **Operating system (OS)**: Linux, Windows or Mac OS.
 - **compute power and cores (CPU)**
 - **Random Access Memory**
@@ -399,7 +400,7 @@ It can help you:
 
 - **Bootstapping** means launching the commands when the machine starts. It can be **run only once** when the instance first starts.
 
-## 3.2 EC2 INSTANCE TYPES
+### 3.2 EC2 INSTANCE TYPES
 - There are 7 types of EC2 Instances 
 
 ### 1. EC2 Instances Types - General Purpose
