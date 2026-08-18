@@ -533,6 +533,7 @@ This session covers topic that is needed for SAA-C03 level
 **ELASTIC IP**
 - It is used to have a **fixed Public IP**
 - We can have only **5 Elastic IP** (can be increased)
+-----
 
 ### 4.2 Placement Groups
 - This defines the **placement of EC2 instances**, and they are defined by stratergies.
@@ -556,3 +557,13 @@ This session covers topic that is needed for SAA-C03 level
 - We can have upto to **7 partitions per AZ in the same region**
 - **Use case**: Big data like Cassandra, Kafka, HDFS
 ![alt text](../assets/spread_stratergy.png)
+-----
+
+### 4.3 Elastic Network Interface (ENI)
+- Logical component in VPC and gives **virutal network card** for EC2 instances.
+- They provide:
+   1. **Private IP, and one or more secondary IPv4**
+   2. **One Elastic IPv4**
+   3. **One or more Secruity group and MAC address**
+- They are **bound to specific AZ**
+- E**NI can be moved across EC2 instances for failover purposes**
