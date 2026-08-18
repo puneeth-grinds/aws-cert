@@ -696,8 +696,10 @@ There are 6 volumes types:
 **EBS**
    1. One instance at a time (except io1, io2)
    2. locked at AZ level
-   
+
 **EFS**
    1. 100s of EC2 instances
    2. Across AZ
    3. Expensive 
+
+> **Exam Tip**: Deleting an EC2 instance, by default r**oot volume will be deleted**, but **EBS volume wont be deleted by default**
