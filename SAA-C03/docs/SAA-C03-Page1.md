@@ -654,3 +654,12 @@ There are 6 volumes types:
    1. For data that is infrequently accessed
    2. Scenarios where lowest cost is important 
    3. **Max throughput 250 MiB/s - max IOPS 250**
+----
+
+### 5.6 Multi-Attach EBS volume 
+- **EBS volumes can be attached to multiple EC2 instances**
+- **Allowed only for io1 and io2**
+- **Scoped for a single AZ**
+- **Maximum of 16 EC2 instances at a time** 
+
+---
