@@ -690,3 +690,14 @@ There are 6 volumes types:
 **Availability and durability**
 - **Standard**: Multi AZ,**best for prod**
 - **One zone**: One AZ, and for test and cheaper
+
+
+### 5.9 EBS vs EFS
+**EBS**
+   1. One instance at a time (except io1, io2)
+   2. locked at AZ level
+   
+**EFS**
+   1. 100s of EC2 instances
+   2. Across AZ
+   3. Expensive 
