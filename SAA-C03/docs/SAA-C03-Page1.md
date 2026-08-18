@@ -583,3 +583,14 @@ This section talks about EBS volumes, snapshot, AMI and many more.
 - It is used to **presist data** of an EC2 instance
 - Can be **attached to a single EC2 instance at a time** 
 - It is **bound to a single AZ**
+![alt text](../assets/ebs_volume.png)
+> **Exam Tip**: Two EBS Volumes can be attached to a single EC2 instance
+---
+
+### 5.2 EBS Snapshots
+- It is a **backup of EBS volume**
+- **Can be copied across regions and AZ** 
+
+**EBS Snapshot Archive**
+- **75% cheaper**
+- **24 to 72 hours** for restoring 
