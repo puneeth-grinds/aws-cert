@@ -594,3 +594,11 @@ This section talks about EBS volumes, snapshot, AMI and many more.
 **EBS Snapshot Archive**
 - **75% cheaper**
 - **24 to 72 hours** for restoring 
+
+**Recycle bin for EBS snapshort**
+- Setup to **recover** snapshots from **accidental deletion.**
+- **Retention** period is **1 day to 1 year**
+
+**Fast Snapshot Restore (FSR)**
+- **Forceful initialization of snapshot**
+- **Expensive**
