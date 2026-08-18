@@ -549,4 +549,10 @@ This session covers topic that is needed for SAA-C03 level
 - **Reduced risk in simultaneous failure**
 - **Cons**: Limited to 7 instances per AZ
 - **Use case:** Critical applications that need high availability 
-![spread stratergy](spread_stratergy.png)
+![spread stratergy](../assets/spread_stratergy.png)
+
+**Partition Stratergy**
+- We can have **instances spread across multiple partitions inside a AZ**
+- We can have upto to **7 partitions per AZ in the same region**
+- **Use case**: Big data like Cassandra, Kafka, HDFS
+![alt text](../assets/spread_stratergy.png)
