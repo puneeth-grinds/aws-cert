@@ -672,4 +672,12 @@ There are 6 volumes types:
 1. Create an EBS snapshot of a volume 
 2. **Encrypt using a copy** 
 3. Create **new volume from the snapshot** (volume also will be encrypted)
-4. 
+
+---
+
+### 5.8 AWS EFS - Elastic File System 
+- It is a **managed NFS (Network File system)** and can be **mounted on multiple EC2 instances.**
+- **Works across multiple AZ**
+- **Expensive**
+- **Use case**: wordpress
+> **Exam Tip**: **Only for Linux AMI, not available for Windows**
