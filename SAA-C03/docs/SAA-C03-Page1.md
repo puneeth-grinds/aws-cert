@@ -756,3 +756,9 @@ This section covers around scalability and high availability.
    3. Query strings, Headers
 - Use case: **micro services**
 - **Port mapping features**
+
+**Application Load Balancer Target Groups**
+- Ec2 instances
+- ECS tasks
+- Lambda functions
+- IP addresses - private
