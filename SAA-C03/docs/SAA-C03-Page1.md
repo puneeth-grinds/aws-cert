@@ -716,3 +716,11 @@ This section covers around scalability and high availability.
 - There are two kinds of scalability:
    1. Vertical Scalability 
    2. Horizontal Scalaility (**Elasticity**)
+
+**Vertical Scalability**
+- **Increase in size of instance**
+- Use case: Database such as RDS
+
+**Horizontal Scalability**
+- **Increase the number of instances**
+- Use case: web application 
