@@ -711,3 +711,8 @@ There are 6 volumes types:
 This section covers around scalability and high availability.
 
 ### 6.1 Scalability & High Availability 
+**Scalability**
+- The ability of the system to **handle increase in workload**
+- There are two kinds of scalability:
+   1. Vertical Scalability 
+   2. Horizontal Scalaility (**Elasticity**)
