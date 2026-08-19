@@ -733,3 +733,15 @@ This section covers around scalability and high availability.
 ### 6.2 Load balancing 
 - **Set of servers that forward traffic to multiple downstream servers**
 - Have **health checks enabled**
+- **AWS Managed service**
+
+
+**Health checks**
+- Check if **EC2 instance are working** before forwarding the requests
+
+**Types of load balancer**
+- There are 4 types of load balancer
+   1. **Classic Load balancer - Deprecated**
+   2. **Application Load Balancer - ALB** - **Http, https and websocket**
+   3. **Network Load Balancer** - **TCP, TLS and UDP**
+   4. **Gateway Load Balancer** - Operates at Layer 3 
