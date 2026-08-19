@@ -724,3 +724,7 @@ This section covers around scalability and high availability.
 **Horizontal Scalability**
 - **Increase the number of instances**
 - Use case: web application 
+
+**High Availabity**
+- Goes hand in hand with Horizontal scalability 
+- **Multi AZ deployment**
