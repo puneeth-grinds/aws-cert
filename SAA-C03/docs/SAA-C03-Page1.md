@@ -728,3 +728,8 @@ This section covers around scalability and high availability.
 **High Availabity**
 - Goes hand in hand with Horizontal scalability 
 - **Multi AZ deployment**
+----
+
+### 6.2 Load balancing 
+- **Set of servers that forward traffic to multiple downstream servers**
+- Have **health checks enabled**
