@@ -705,3 +705,9 @@ There are 6 volumes types:
 
 > **Exam Tip**: Deleting an EC2 instance, by default r**oot volume will be deleted**, but **EBS volume wont be deleted by default**
 > **Exam Tip**: `gp2`, `gp3` and `io1`,`io2` can be used as boot volume at the time of Ec2 instance creation 
+
+----
+## 6. ALB & ASG
+This section covers around scalability and high availability.
+
+### 6.1 Scalability & High Availability 
