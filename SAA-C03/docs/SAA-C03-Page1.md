@@ -745,3 +745,14 @@ This section covers around scalability and high availability.
    2. **Application Load Balancer - ALB** - **Http, https and websocket**
    3. **Network Load Balancer** - **TCP, TLS and UDP**
    4. **Gateway Load Balancer** - Operates at Layer 3 
+
+### 6.3 Application Load Balancing 
+- **Layer 7** 
+- Route multiple **HTTP applications**
+- **Supports** for **Websocket** and also redirect from **HTTP to HTTPS**
+- Routing based on:
+   1. path in URL
+   2. hostname in URL
+   3. Query strings, Headers
+- Use case: **micro services**
+- **Port mapping features**
