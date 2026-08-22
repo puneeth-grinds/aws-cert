@@ -872,3 +872,17 @@ Network Load Balancer & Gateway Load Balancer
 **Auto Scaling - CloudWatch Alarms**
 - It is possible to scale an ASG based on CloudWatch alarms 
 - Alarms are triggered by metrics 
+
+### 6.12 Auto Scaling Groups - Scaling Policies
+**Dynamic Scaling**
+   1. **Target Tracking scaling**
+      - Simple to set-up
+      - Example: I want avg ASG CPU to stay around 40%
+   2. **Step scaling**
+      - When a CloudWatch alarm is triggered then it adds/removes units
+   3. **Schedules Scaling**
+      - Anticipate scaling 
+   4. **Predictive scaling**
+      - LLM based scaling 
+      - predicts and scales based on previous patterns 
+
