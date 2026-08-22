@@ -762,3 +762,8 @@ This section covers around scalability and high availability.
 - ECS tasks
 - Lambda functions
 - IP addresses - private
+
+**ALB Good to Know**
+- **Fixed hostname** 
+- The **application servers don't see the IP of the client directly**
+- The true IP is inserted in header X-Forwarded-For
