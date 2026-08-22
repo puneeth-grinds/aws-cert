@@ -868,3 +868,7 @@ Network Load Balancer & Gateway Load Balancer
 - Ensure we have minimum and maximum number of EC2 instances running 
 
 > **Exam tip**: ASG is free, we pay for underlying instances being used 
+
+**Auto Scaling - CloudWatch Alarms**
+- It is possible to scale an ASG based on CloudWatch alarms 
+- Alarms are triggered by metrics 
