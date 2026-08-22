@@ -823,9 +823,10 @@ This section covers around scalability and high availability.
 **Cross-Zone Load Balancing**
 
 Application Load Balancer
-   1. **Enabled by default** 
-   2. **No charges for inter AZ**
+   1. **Enabled** by default 
+   2. **No charges** for inter AZ
 
 Network Load Balancer & Gateway Load Balancer
    1. **Disabled** by default 
    2. **Pay extra charges**
+
