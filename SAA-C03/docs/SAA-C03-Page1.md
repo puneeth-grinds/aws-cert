@@ -850,3 +850,9 @@ Network Load Balancer & Gateway Load Balancer
 - There is a **"newer" protocol** that needs to indicate the **hostname** and the **target server** at the initial handshake 
 - Only works for:
    1. **ALB and NLB**
+![alt text](../assets/sni.png)
+
+- **Classic Load Balancer** - single only one SSL cert
+- **Application Load Balancer** - Supports multiple cert
+- **Network Load Balancer** - Suppots multiple cert
+
