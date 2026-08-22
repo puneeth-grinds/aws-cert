@@ -844,3 +844,9 @@ Network Load Balancer & Gateway Load Balancer
 - Certs can be **managed using ACM**
 - We can upload our **own certs**
 - Clients can use **SNI (Server Name Indication) to specify hostname they reach**
+
+**SNI - Server Name Indication**
+- Solves the problem of loading **multiple SSL certificates onto one web server**
+- There is a **"newer" protocol** that needs to indicate the **hostname** and the **target server** at the initial handshake 
+- Only works for:
+   1. **ALB and NLB**
