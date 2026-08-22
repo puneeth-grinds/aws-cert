@@ -830,3 +830,8 @@ Network Load Balancer & Gateway Load Balancer
    1. **Disabled** by default 
    2. **Pay extra charges**
 
+### 6.9 SSL/TLS - Certificates
+- SSL certs allow **traffic** between client and load balancer to be **encrypted** in transit (**in-flight encryption**)
+- **SSL - Secure Socker Layer**
+- **TLS - Transport Layer Security**
+- Issued by **Certificates Authorities** (CA)
