@@ -861,3 +861,10 @@ Network Load Balancer & Gateway Load Balancer
 - **Deregistration Delay** - ALB and NLB 
 - Gives some time for instances to complete the active requests and until then it will be set to **Draining** state  
 - Between 1 to 3600 seconds (defaut: 300 seconds)
+
+### 6.11 Auto-Scaling group
+- **Scale out** to match increase in load 
+- **Scale in** to match decrease in load 
+- Ensure we have minimum and maximum number of EC2 instances running 
+
+> **Exam tip**: ASG is free, we pay for underlying instances being used 
