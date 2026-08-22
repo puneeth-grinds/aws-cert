@@ -772,3 +772,10 @@ This section covers around scalability and high availability.
 - **Layer 4 - TCP and UDP Traffic**
 - Handle **millions of requests per second**
 - **One static IP per AZ**
+
+**Target Groups**
+- Can be **Ec2 instances**
+- Can be **IP addresses**
+- Can be **Application Load Balancer**
+
+> **Exam Tip**: Health checks supports TCP, HTTP and HTTPS Protocols
