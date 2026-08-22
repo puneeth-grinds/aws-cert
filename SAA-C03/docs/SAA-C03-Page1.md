@@ -835,3 +835,11 @@ Network Load Balancer & Gateway Load Balancer
 - **SSL - Secure Socker Layer**
 - **TLS - Transport Layer Security**
 - Issued by **Certificates Authorities** (CA)
+- Expiration date and needs to be renewed
+
+**Load Balancer - SSL Certs**
+- Users connect over HTTPS (S - secure/TLS) to load balancer.
+- Internally, Load balancer does **SSL certs termination** and  in backend it talks to **EC2 using HTTP with Private network**
+- Load balancer uses **X.509 certs**
+- Certs can be **managed using ACM**
+- We can upload our **own certs**
