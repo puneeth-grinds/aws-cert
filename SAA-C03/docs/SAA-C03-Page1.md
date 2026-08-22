@@ -886,3 +886,7 @@ Network Load Balancer & Gateway Load Balancer
       - LLM based scaling 
       - predicts and scales based on previous patterns 
 
+**Auto Scaling Groups - Scaling Cooldowns**
+- After a scaling activity, there is a scaling cool down that happens
+- In that cooldown period, ASG will not launch additional instances 
+
