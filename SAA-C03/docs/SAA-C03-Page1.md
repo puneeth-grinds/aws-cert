@@ -892,3 +892,4 @@ Network Load Balancer & Gateway Load Balancer
 
 **Exam Tips**
 - An Elastic IP cannot be attached to an Application Load Balancer
+- Reserved cookie names by ELB such as AWSALBAPP, AWSALBTG, AWSALB cannot be used for custome application based cookie 
