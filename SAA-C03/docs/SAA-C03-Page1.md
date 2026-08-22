@@ -819,3 +819,13 @@ This section covers around scalability and high availability.
 ### 6.8 Without Cross-Zone Load Balancing
 - Requests are distributed in the instances of the **node of the Elastic Load Balancer**
 ![alt text](../assets/without_cross_zone_lb.png)
+
+**Cross-Zone Load Balancing**
+
+Application Load Balancer
+   1. **Enabled by default** 
+   2. **No charges for inter AZ**
+
+Network Load Balancer & Gateway Load Balancer
+   1. **Disabled** by default 
+   2. **Pay extra charges**
