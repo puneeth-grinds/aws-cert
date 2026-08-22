@@ -890,3 +890,5 @@ Network Load Balancer & Gateway Load Balancer
 - After a scaling activity, there is a scaling cool down that happens
 - In that cooldown period, ASG will not launch additional instances 
 
+**Exam Tips**
+- An Elastic IP cannot be attached to an Application Load Balancer
