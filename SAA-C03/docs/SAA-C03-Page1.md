@@ -843,3 +843,4 @@ Network Load Balancer & Gateway Load Balancer
 - Load balancer uses **X.509 certs**
 - Certs can be **managed using ACM**
 - We can upload our **own certs**
+- Clients can use **SNI (Server Name Indication) to specify hostname they reach**
