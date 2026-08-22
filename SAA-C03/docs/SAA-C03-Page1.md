@@ -856,3 +856,8 @@ Network Load Balancer & Gateway Load Balancer
 - **Application Load Balancer** - Supports multiple cert
 - **Network Load Balancer** - Suppots multiple cert
 
+### 6.10 Connection Draining 
+- **Connection Draining** - CLB
+- **Deregistration Delay** - ALB and NLB 
+- Gives some time for instances to complete the active requests and until then it will be set to **Draining** state  
+- Between 1 to 3600 seconds (defaut: 300 seconds)
