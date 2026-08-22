@@ -767,3 +767,8 @@ This section covers around scalability and high availability.
 - **Fixed hostname** 
 - The **application servers don't see the IP of the client directly**
 - The true IP is inserted in header X-Forwarded-For
+
+### 6.4 Network Load Balancing 
+- **Layer 4 - TCP and UDP Traffic**
+- Handle **millions of requests per second**
+- **One static IP per AZ**
