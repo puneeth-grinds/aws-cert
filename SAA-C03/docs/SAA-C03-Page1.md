@@ -779,3 +779,7 @@ This section covers around scalability and high availability.
 - Can be **Application Load Balancer**
 
 > **Exam Tip**: Health checks supports TCP, HTTP and HTTPS Protocols
+
+### 6.5 Gateway Load Balancer
+- **Deploy, scale and manage third-party network virutal appliances in AWS**
+- Example: Firewalls, ITPS(Intrusion Detection and Prevention Systems)
