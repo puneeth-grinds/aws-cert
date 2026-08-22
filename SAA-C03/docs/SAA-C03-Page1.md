@@ -794,3 +794,7 @@ This section covers around scalability and high availability.
 **Target Groups**
 - EC2 instances
 - IP addresses - Private 
+
+### 6.6 Elastic Load Balancer - Sticky Sessions 
+- Same client is always redirected to the same instance behind a load balancer
+- For Classic Load Balancer, Application Load Balancer, and Network Load Balancer
