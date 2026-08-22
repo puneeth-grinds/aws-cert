@@ -785,3 +785,12 @@ This section covers around scalability and high availability.
 - **Deploy, scale and manage third-party network virutal appliances in AWS**
 - Example: Firewalls, ITPS(Intrusion Detection and Prevention Systems)
 ![alt text](../assets/gateway_lb.png)
+- Operates at **Layer 3**
+- This combines the following functions:
+   1. **Transparent Network Gateway**: Single entry and exit for all traffic 
+   2. **Load Balancer** - Distributes the traffic 
+- **GENEVE protocol on port 6081**
+
+**Target Groups**
+- EC2 instances
+- IP addresses - Private 
