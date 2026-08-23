@@ -1059,3 +1059,7 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **In-memory databases**
 - Used for **read-inetensive tasks**
 - **AWS managed service**
+
+**ElastiCache Solution Architecture - DB Cache**
+- Application cache for query to ElastiCache - **cache hit**
+- If ElastiCache doesn't have answer then -  Cache miss and it fetches and stores
