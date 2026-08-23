@@ -960,3 +960,7 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - We will **access to underlying infrastructure**
 
 ### 7.6 AWS Aurora
+- **proprietary** technology
+- **Postgres and MySQL are supported**
+- **Automatically grows** in increments of 10GB upto 256 TB
+- Upto to **15 read replicas**
