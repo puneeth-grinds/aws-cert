@@ -429,18 +429,11 @@ It can help you:
 - They can authorize **IP ranges**
 - Example of Security group table:
 ![alt text](../assets/security_group_table.png)
-
-## 3.4 Classic Ports to know 
-- Port 22 = SSH
-- Port 21 = FTP
-- Port 22 = SFTP
-- Port 443 - HTTPS
-- Port 80 - HTT
-- Port 3389 - RDP - Remote Desktop protocol 
+ 
 
 >**Exam Tip**: If there is a timeout, it most likely means because of security group
 
-## 3.5 SSH Overview
+## 3.4 SSH Overview
 - It can be used in:
    1. Mac
    2. Linux 
@@ -450,7 +443,7 @@ It can help you:
 - It is used **via browser**
 - Available for **Amazon linux**
 
-## 3.6 EC2 Instances Purchasing Options 
+## 3.5 EC2 Instances Purchasing Options 
 
 ### 1. EC2 On Demand
 - Pay for what we use 
@@ -491,7 +484,7 @@ It can help you:
 - **Reserve On-Demand instances capacity in a specific AZ** 
 - **No time commitment and No billing discount** 
 
-## 3.7 SPOT INSTANCE REQUESTS
+## 3.6 SPOT INSTANCE REQUESTS
 - Upto **90% discounts**
 - Define **max spot price** and get the instance while **current price < max spot price**
 - Spot prices varies between AZ's
@@ -499,7 +492,7 @@ It can help you:
 - **Cancelling a spot instance will not terminate instances**
 - **Termination process** - Cancel spot request, and then terminate the spot requests 
 
-## 3.8 SPOT FLEETS
+## 3.7 SPOT FLEETS
 - **Spot fleet = set of spot instances + On-Demand instances**
 - Stops launching instances when:
    1. **Budget is met** 
