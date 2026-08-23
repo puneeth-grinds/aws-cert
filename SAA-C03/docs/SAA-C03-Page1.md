@@ -1077,3 +1077,16 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - all the read data is cached an can become stale in cache 
 **WriteThrough**
 - update the data in cache when it is written to db
+
+### 7.19 Ports to Remember 
+- FTP: 21
+- SSH: 22
+- SFTP: 22 (same as SSH) 
+- HTTP: 80
+- HTTPS: 443
+- PostgreSQL: 5432
+- MySQL: 3306
+- Oracle RDS: 1521
+- MSSQL Server: 1433
+- MariaDB: 3306 (same as MySQL)
+- Aurora: 5432 (if PostgreSQL compatible) or 3306 (if MySQL compatible)
