@@ -984,7 +984,20 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **Replica auto-scaling adds read replicas**
 - The **Reader Endpoint will be extended** to ensure that the new read replicas also recieve the request
 ![alt text](../assets/aurora-replica-autoscaling.png)
+
 **Aurora Custom Endpoints**
 - Define a **subset of Aurora instances as a custom endpoint**
 - Depends on use case 
 ![alt text](../assets/aurora_custom_endpoint.png)
+
+**Aurora Serverless**
+- **Automated Scaling and database initialization**
+- No **capacity planning** 
+
+**Global Aurora**
+- Useful for disaster recovery 
+- **Aurora Global database**:
+   1. **1 Primary region**
+   2. **Up to 10 secondary (read-only) regions** 
+   3. **Upto 16 Read Replicas per secondary region**
+   4. **Cross-region replication takes less than 1 second**
