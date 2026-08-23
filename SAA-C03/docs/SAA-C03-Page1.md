@@ -1007,3 +1007,7 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - We can use:
    1. Sagemaker
    2. Comprehend 
+
+**Babelfish for Aurora PostgresSQL**
+- **Allows Aurora PostgresSQL to understand commands targeted for MS SQL Server**
+- Example: TSQL language 
