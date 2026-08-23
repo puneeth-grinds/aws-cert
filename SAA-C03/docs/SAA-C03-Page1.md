@@ -1011,3 +1011,12 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 **Babelfish for Aurora PostgresSQL**
 - **Allows Aurora PostgresSQL to understand commands targeted for MS SQL Server**
 - Example: TSQL language 
+
+### 7.10 RDS Backups
+- **Automated backups:**
+   1. **Daily full backup**
+   2. **Transaction logs** are also backed up **every 5 minutes**
+   3. **1 to 35 retention**
+- **Manual DB snapshots**
+   1. Manually triggered by the user
+   2. Retention is as long as you want 
