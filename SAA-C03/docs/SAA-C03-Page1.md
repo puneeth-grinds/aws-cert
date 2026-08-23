@@ -931,3 +931,4 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
    2. Cross AZ
    3. Cross Region
 - **Replication is ASYNC** so reads are eventually consistent 
+![alt text](../assets/read_replicas.png)
