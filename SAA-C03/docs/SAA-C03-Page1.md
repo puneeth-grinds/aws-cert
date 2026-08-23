@@ -899,7 +899,7 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 
 ### 7.1 Amazon RDS Overview
 - **RDS = Relational Database Service**
-- Uses SQL language 
+- Uses **SQL language** 
 - It allows to create databases that are managed by AWS:
    1. Postgres
    2. MySQL
@@ -907,3 +907,13 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
    4. Oracle
    5. IBM DB2
    6. Aurora (AWS Proprietary Database)
+
+### 7.2 Advantages of using RDS instead of deploying DB on EC2
+
+- RDS is a managed service
+   1. Provisioning and **automated patching **
+   2. Continous **backups** are made 
+   3. **Monitoring dashboard**
+   4. **Read replicas**
+   5. **Multi AZ**
+   6. **Scaling** 
