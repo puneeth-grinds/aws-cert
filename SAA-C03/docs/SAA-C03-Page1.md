@@ -946,3 +946,10 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 > **Exam Tip1**: Async: Primary writes → immediately tells you "done" → replica catches up later.
 
 > **Exam Tip2**:Sync: Primary writes → ensures the standby has received the change → then confirms "done."
+
+### 7.5 RDS - From Single AZ to Multi AZ
+- It is **Zero downtime operatios**
+- The following happens internally:
+   1. A snapshot is taken 
+   2. A new DB is created from the snapshot 
+   3. Synchronization is established between two databases
