@@ -1053,3 +1053,9 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **Serverless and auto-scaling**
 - **Reduced RDS and Aurora failovertime by up 66%**
 - **Never publicly accessible**
+
+### 7.16 ElastiCache
+- **Redis or Memcached**
+- **In-memory databases**
+- Used for **read-inetensive tasks**
+- **AWS managed service**
