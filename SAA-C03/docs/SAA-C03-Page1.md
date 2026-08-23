@@ -1063,3 +1063,12 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 **ElastiCache Solution Architecture - DB Cache**
 - Application cache for query to ElastiCache - **cache hit**
 - If ElastiCache doesn't have answer then -  Cache miss and it fetches and stores
+
+### 7.17 ElastiCache Security 
+- **IAM authentication for redis only, rest uses username and password**
+- Redis Auth: 
+   1. Username password can be set - Extra security
+   2. **supports SSL**
+- Memcached:
+   - Supports **SASL-based authentication** 
+   - 
