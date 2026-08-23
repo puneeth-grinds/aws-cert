@@ -1029,3 +1029,10 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - Manual backups:
    1. Manually triggered by the user
    2. Retention is as long as you want 
+
+### 7.12 RDS and Aurora Restore Options
+- **Restoring a RDS or aurora creates a new database**
+- **Restoring MySQL RDS database from S3**
+
+### 7.13 Aurora Database Cloning 
+- Create a new Aurora DB cluster from an existing one 
