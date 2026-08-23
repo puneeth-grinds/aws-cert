@@ -964,3 +964,11 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **Postgres and MySQL are supported**
 - **Automatically grows** in increments of 10GB upto 256 TB
 - Upto to **15 read replicas**
+- About **20% more than RDS**
+
+### 7.7 Aurora High Availability and Read Scaling 
+- **6 copies of your data across 3 AZ**:
+   1. **4 copies** out of 6 for **write**
+   2. **3 copies** out of 6 need for reads
+   3. **Self healing** for data that is corrupted 
+- **One Aurora instances takes writes**
