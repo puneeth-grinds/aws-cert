@@ -1084,3 +1084,6 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - MSSQL Server: 1433
 - MariaDB: 3306 (same as MySQL)
 - Aurora: 5432 (if PostgreSQL compatible) or 3306 (if MySQL compatible)
+
+**Note**
+1. RDS feature when used does not require you to change the connection string is Multi-AZ
