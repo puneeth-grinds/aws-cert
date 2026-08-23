@@ -922,3 +922,12 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **Increase** **storage of DB instance dynamically** 
 - **Scaling is automated** 
 - Set **maximum threshold**
+
+### 7.4 Read Replicas
+- **Scale the read operation on your database**
+- Upto **15 read replicas**
+- It can be:
+   1. Within AZ
+   2. Cross AZ
+   3. Cross Region
+- **Replication is ASYNC** so reads are eventually consistent 
