@@ -917,3 +917,8 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
    4. **Read replicas**
    5. **Multi AZ**
    6. **Scaling** 
+
+### 7.3 RDS - Storage Auto Scaling
+- **Increase** **storage of DB instance dynamically** 
+- **Scaling is automated** 
+- Set **maximum threshold**
