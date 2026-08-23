@@ -972,3 +972,8 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
    2. **3 copies** out of 6 need for reads
    3. **Self healing** for data that is corrupted 
 - **One Aurora instances takes writes**
+
+### 7.8 Aurora DB Cluster
+- **Data write will be go through writer Endpoint and even on a failover the data goes through this**
+**Reader Endpoint recieves read requests and points them to one of the read replica**
+![alt text](../assets/aurora-db-cluster.png)
