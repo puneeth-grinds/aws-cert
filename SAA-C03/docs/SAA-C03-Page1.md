@@ -977,3 +977,12 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **Data write will be go through writer Endpoint and even on a failover the data goes through this**
 **Reader Endpoint recieves read requests and points them to one of the read replica**
 ![alt text](../assets/aurora-db-cluster.png)
+
+### 7.9  Aurora - Advances Concepts 
+
+**Aurora Replicas - Auto Scaling**
+- **Replica auto-scaling adds read replicas**
+- The **Reader Endpoint will be extended** to ensure that the new read replicas also recieve the request
+
+**Aurora Custom Endpoints**
+- Define a subset of Aurora instances as a custom endpoint 
