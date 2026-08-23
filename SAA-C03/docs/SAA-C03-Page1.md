@@ -1042,4 +1042,6 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 ### 7.14 RDS and Aurora Security
 - **At-rest encryption: KMS (Master database)**
 - To encrypt an un-encrypted db, take a snapshot and recreate and encrypt during the process
-- **In-flight encryption: TLS ready bu default**
+- **In-flight encryption: TLS ready by default**
+- **IAM Authentication**
+- **Security groups**
