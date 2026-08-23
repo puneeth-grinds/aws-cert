@@ -1045,3 +1045,10 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **In-flight encryption: TLS ready by default**
 - **IAM Authentication**
 - **Security groups**
+
+### 7.15 RDS Proxy
+- **Fully managed database proxy for RDS**
+- Allows apps to pool and share DB connections 
+- **Apps connect to RDS proxy and it will be pooled by the proxy** 
+- **Serverless and auto-scaling**
+- **Reduced RDS and Aurora failovertime by up 66%**
