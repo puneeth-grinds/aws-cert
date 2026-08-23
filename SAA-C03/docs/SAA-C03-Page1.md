@@ -1038,3 +1038,8 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - Create a new Aurora DB cluster from an existing one 
 - **Faster** than snapshot or restore
 - Uses **copy-on-write protocol**
+
+### 7.14 RDS and Aurora Security
+- **At-rest encryption: KMS (Master database)**
+- To encrypt an un-encrypted db, take a snapshot and recreate and encrypt during the process
+- **In-flight encryption: TLS ready bu default**
