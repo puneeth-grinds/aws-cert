@@ -937,3 +937,9 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 **RDS Read Replicas - Network Cost**
 - In AWS there's a **network cost** when data goes from **one AZ to another** 
 - Read Replicas within the same region, you don't pay that fee
+
+### 7.4 RDS Multi AZ (Disaster Recovery)
+- We have **SYNC replication** 
+- **We get one DNS name - used for failover routing**
+- **Read replicas can be set as AZ for disaster recovery**
+![multi_az](../assets/multi_az.png)
