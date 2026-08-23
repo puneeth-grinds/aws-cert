@@ -893,3 +893,17 @@ Network Load Balancer & Gateway Load Balancer
 **Exam Tips**
 - An Elastic IP cannot be attached to an Application Load Balancer
 - Reserved cookie names by ELB such as AWSALBAPP, AWSALBTG, AWSALB cannot be used for custome application based cookie 
+
+## 7.  AWS RDS + AWS Aurora + ElastiCache 
+This section talks about AWS managed Databases and in-memory such as ElastiCache
+
+### 7.1 Amazon RDS Overview
+- **RDS = Relational Database Service**
+- Uses SQL language 
+- It allows to create databases that are managed by AWS:
+   1. Postgres
+   2. MySQL
+   3. MariaDB
+   4. Oracle
+   5. IBM DB2
+   6. Aurora (AWS Proprietary Database)
