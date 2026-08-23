@@ -1068,6 +1068,7 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 ### 7.18 Patters for ElastiCache
 **Lazy Loading**
 - all the read data is cached an can become stale in cache 
+
 **WriteThrough**
 - update the data in cache when it is written to db
 
