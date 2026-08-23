@@ -1001,3 +1001,9 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
    2. **Up to 10 secondary (read-only) regions** 
    3. **Upto 16 Read Replicas per secondary region**
    4. **Cross-region replication takes less than 1 second**
+
+**Aurora Machine Learaning**
+- Enables you to **add ML-based predictions to your applications via SQL**
+- We can use:
+   1. Sagemaker
+   2. Comprehend 
