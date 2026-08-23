@@ -983,6 +983,8 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 **Aurora Replicas - Auto Scaling**
 - **Replica auto-scaling adds read replicas**
 - The **Reader Endpoint will be extended** to ensure that the new read replicas also recieve the request
-
+![alt text](../assets/aurora-replica-autoscaling.png)
 **Aurora Custom Endpoints**
-- Define a subset of Aurora instances as a custom endpoint 
+- Define a **subset of Aurora instances as a custom endpoint**
+- Depends on use case 
+![alt text](../assets/aurora_custom_endpoint.png)
