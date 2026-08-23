@@ -1052,3 +1052,4 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **Apps connect to RDS proxy and it will be pooled by the proxy** 
 - **Serverless and auto-scaling**
 - **Reduced RDS and Aurora failovertime by up 66%**
+- **Never publicly accessible**
