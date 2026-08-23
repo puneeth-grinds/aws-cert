@@ -429,18 +429,11 @@ It can help you:
 - They can authorize **IP ranges**
 - Example of Security group table:
 ![alt text](../assets/security_group_table.png)
-
-## 3.4 Classic Ports to know 
-- Port 22 = SSH
-- Port 21 = FTP
-- Port 22 = SFTP
-- Port 443 - HTTPS
-- Port 80 - HTT
-- Port 3389 - RDP - Remote Desktop protocol 
+ 
 
 >**Exam Tip**: If there is a timeout, it most likely means because of security group
 
-## 3.5 SSH Overview
+## 3.4 SSH Overview
 - It can be used in:
    1. Mac
    2. Linux 
@@ -450,7 +443,7 @@ It can help you:
 - It is used **via browser**
 - Available for **Amazon linux**
 
-## 3.6 EC2 Instances Purchasing Options 
+## 3.5 EC2 Instances Purchasing Options 
 
 ### 1. EC2 On Demand
 - Pay for what we use 
@@ -491,7 +484,7 @@ It can help you:
 - **Reserve On-Demand instances capacity in a specific AZ** 
 - **No time commitment and No billing discount** 
 
-## 3.7 SPOT INSTANCE REQUESTS
+## 3.6 SPOT INSTANCE REQUESTS
 - Upto **90% discounts**
 - Define **max spot price** and get the instance while **current price < max spot price**
 - Spot prices varies between AZ's
@@ -499,7 +492,7 @@ It can help you:
 - **Cancelling a spot instance will not terminate instances**
 - **Termination process** - Cancel spot request, and then terminate the spot requests 
 
-## 3.8 SPOT FLEETS
+## 3.7 SPOT FLEETS
 - **Spot fleet = set of spot instances + On-Demand instances**
 - Stops launching instances when:
    1. **Budget is met** 
@@ -890,3 +883,203 @@ Network Load Balancer & Gateway Load Balancer
 - After a scaling activity, there is a scaling cool down that happens
 - In that cooldown period, ASG will not launch additional instances 
 
+**Exam Tips**
+- An Elastic IP cannot be attached to an Application Load Balancer
+- Reserved cookie names by ELB such as AWSALBAPP, AWSALBTG, AWSALB cannot be used for custome application based cookie 
+
+## 7.  AWS RDS + AWS Aurora + ElastiCache 
+This section talks about AWS managed Databases and in-memory such as ElastiCache
+
+### 7.1 Amazon RDS Overview
+- **RDS = Relational Database Service**
+- Uses **SQL language** 
+- It allows to create databases that are managed by AWS:
+   1. Postgres
+   2. MySQL
+   3. MariaDB
+   4. Oracle
+   5. IBM DB2
+   6. Aurora (AWS Proprietary Database)
+
+### 7.2 Advantages of using RDS instead of deploying DB on EC2
+
+- RDS is a managed service
+   1. Provisioning and **automated patching **
+   2. Continous **backups** are made 
+   3. **Monitoring dashboard**
+   4. **Read replicas**
+   5. **Multi AZ**
+   6. **Scaling** 
+
+### 7.3 RDS - Storage Auto Scaling
+- **Increase** **storage of DB instance dynamically** 
+- **Scaling is automated** 
+- Set **maximum threshold**
+
+### 7.4 Read Replicas
+- **Scale the read operation on your database**
+- Upto **15 read replicas**
+- It can be:
+   1. Within AZ
+   2. Cross AZ
+   3. Cross Region
+- **Replication is ASYNC** so reads are eventually consistent 
+![Read Replica](../assets/read_replicas.png)
+
+
+**RDS Read Replicas - Network Cost**
+- In AWS there's a **network cost** when data goes from **one AZ to another** 
+- Read Replicas within the same region, you don't pay that fee
+
+### 7.4 RDS Multi AZ (Disaster Recovery)
+- We have **SYNC replication** 
+- **We get one DNS name - used for failover routing**
+- **Read replicas can be set as AZ for disaster recovery**
+![multi_az](../assets/multi_az.png)
+> **Exam Tip1**: Async: Primary writes → immediately tells you "done" → replica catches up later.
+
+> **Exam Tip2**:Sync: Primary writes → ensures the standby has received the change → then confirms "done."
+
+### 7.5 RDS - From Single AZ to Multi AZ
+- It is **Zero downtime operatios**
+- The following happens internally:
+   1. A snapshot is taken 
+   2. A new DB is created from the snapshot 
+   3. Synchronization is established between two databases
+
+**RDS CUSTOM**
+- It is for **Oracle and Microsoftr SQL server** 
+- Provides **OS and Database customization**
+- We will **access to underlying infrastructure**
+
+### 7.6 AWS Aurora
+- **proprietary** technology
+- **Postgres and MySQL are supported**
+- **Automatically grows** in increments of 10GB upto 256 TB
+- Upto to **15 read replicas**
+- About **20% more than RDS**
+
+### 7.7 Aurora High Availability and Read Scaling 
+- **6 copies of your data across 3 AZ**:
+   1. **4 copies** out of 6 for **write**
+   2. **3 copies** out of 6 need for reads
+   3. **Self healing** for data that is corrupted 
+- **One Aurora instances takes writes**
+
+### 7.8 Aurora DB Cluster
+- **Data write will be go through writer Endpoint and even on a failover the data goes through this**
+**Reader Endpoint recieves read requests and points them to one of the read replica**
+![alt text](../assets/aurora-db-cluster.png)
+
+### 7.9  Aurora - Advances Concepts 
+
+**Aurora Replicas - Auto Scaling**
+- **Replica auto-scaling adds read replicas**
+- The **Reader Endpoint will be extended** to ensure that the new read replicas also recieve the request
+![alt text](../assets/aurora-replica-autoscaling.png)
+
+**Aurora Custom Endpoints**
+- Define a **subset of Aurora instances as a custom endpoint**
+- Depends on use case 
+![alt text](../assets/aurora_custom_endpoint.png)
+
+**Aurora Serverless**
+- **Automated Scaling and database initialization**
+- No **capacity planning** 
+
+**Global Aurora**
+- Useful for disaster recovery 
+- **Aurora Global database**:
+   1. **1 Primary region**
+   2. **Up to 10 secondary (read-only) regions** 
+   3. **Upto 16 Read Replicas per secondary region**
+   4. **Cross-region replication takes less than 1 second**
+
+**Aurora Machine Learaning**
+- Enables you to **add ML-based predictions to your applications via SQL**
+- We can use:
+   1. Sagemaker
+   2. Comprehend 
+
+**Babelfish for Aurora PostgresSQL**
+- **Allows Aurora PostgresSQL to understand commands targeted for MS SQL Server**
+- Example: TSQL language 
+
+### 7.10 RDS Backups
+- **Automated backups:**
+   1. **Daily full backup**
+   2. **Transaction logs** are also backed up **every 5 minutes**
+   3. **1 to 35 retention**
+- **Manual DB snapshots**
+   1. Manually triggered by the user
+   2. Retention is as long as you want 
+
+### 7.11 Aurora Backups 
+- Automated backups:
+   1. 1 to 35 days retention - cannot be disabled
+   2. Point in time recovery
+   
+- Manual backups:
+   1. Manually triggered by the user
+   2. Retention is as long as you want 
+
+### 7.12 RDS and Aurora Restore Options
+- **Restoring a RDS or aurora creates a new database**
+- **Restoring MySQL RDS database from S3**
+
+### 7.13 Aurora Database Cloning 
+- Create a new Aurora DB cluster from an existing one 
+- **Faster** than snapshot or restore
+- Uses **copy-on-write protocol**
+
+### 7.14 RDS and Aurora Security
+- **At-rest encryption: KMS (Master database)**
+- To encrypt an un-encrypted db, take a snapshot and recreate and encrypt during the process
+- **In-flight encryption: TLS ready by default**
+- **IAM Authentication**
+- **Security groups**
+
+### 7.15 RDS Proxy
+- **Fully managed database proxy for RDS**
+- Allows apps to pool and share DB connections 
+- **Apps connect to RDS proxy and it will be pooled by the proxy** 
+- **Serverless and auto-scaling**
+- **Reduced RDS and Aurora failovertime by up 66%**
+- **Never publicly accessible**
+
+### 7.16 ElastiCache
+- **Redis or Memcached**
+- **In-memory databases**
+- Used for **read-inetensive tasks**
+- **AWS managed service**
+
+**ElastiCache Solution Architecture - DB Cache**
+- Application cache for query to ElastiCache - **cache hit**
+- If ElastiCache doesn't have answer then -  Cache miss and it fetches and stores
+
+### 7.17 ElastiCache Security 
+- **IAM authentication for redis only, rest uses username and password**
+- Redis Auth: 
+   1. Username password can be set - Extra security
+   2. **supports SSL**
+- Memcached:
+   - Supports **SASL-based authentication** 
+
+### 7.18 Patters for ElastiCache
+**Lazy Loading**
+- all the read data is cached an can become stale in cache 
+**WriteThrough**
+- update the data in cache when it is written to db
+
+### 7.19 Ports to Remember 
+- FTP: 21
+- SSH: 22
+- SFTP: 22 (same as SSH) 
+- HTTP: 80
+- HTTPS: 443
+- PostgreSQL: 5432
+- MySQL: 3306
+- Oracle RDS: 1521
+- MSSQL Server: 1433
+- MariaDB: 3306 (same as MySQL)
+- Aurora: 5432 (if PostgreSQL compatible) or 3306 (if MySQL compatible)
