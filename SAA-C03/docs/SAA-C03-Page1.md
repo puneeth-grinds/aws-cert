@@ -953,3 +953,10 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
    1. A snapshot is taken 
    2. A new DB is created from the snapshot 
    3. Synchronization is established between two databases
+
+**RDS CUSTOM**
+- It is for **Oracle and Microsoftr SQL server** 
+- Provides **OS and Database customization**
+- We will **access to underlying infrastructure**
+
+### 7.6 AWS Aurora
