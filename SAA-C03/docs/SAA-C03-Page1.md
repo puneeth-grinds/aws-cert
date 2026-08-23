@@ -1020,3 +1020,12 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **Manual DB snapshots**
    1. Manually triggered by the user
    2. Retention is as long as you want 
+
+### 7.11 Aurora Backups 
+- Automated backups:
+   1. 1 to 35 days retention - cannot be disabled
+   2. Point in time recovery
+   
+- Manual backups:
+   1. Manually triggered by the user
+   2. Retention is as long as you want 
