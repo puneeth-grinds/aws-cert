@@ -1036,3 +1036,5 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 
 ### 7.13 Aurora Database Cloning 
 - Create a new Aurora DB cluster from an existing one 
+- **Faster** than snapshot or restore
+- Uses **copy-on-write protocol**
