@@ -904,7 +904,7 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 ### 7.2 Advantages of using RDS instead of deploying DB on EC2
 
 - RDS is a managed service
-   1. Provisioning and **automated patching **
+   1. Provisioning and **automated patching**
    2. Continous **backups** are made 
    3. **Monitoring dashboard**
    4. **Read replicas**
