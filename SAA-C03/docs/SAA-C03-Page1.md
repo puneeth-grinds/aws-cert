@@ -943,3 +943,6 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 - **We get one DNS name - used for failover routing**
 - **Read replicas can be set as AZ for disaster recovery**
 ![multi_az](../assets/multi_az.png)
+> **Exam Tip1**: Async: Primary writes → immediately tells you "done" → replica catches up later.
+
+> **Exam Tip2**:Sync: Primary writes → ensures the standby has received the change → then confirms "done."
