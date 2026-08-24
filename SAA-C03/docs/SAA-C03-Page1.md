@@ -1087,3 +1087,7 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 
 **Note**
 1. RDS feature when used does not require you to change the connection string is Multi-AZ
+
+## ROUTE 53
+- This section will talk about AWS service Route53
+
