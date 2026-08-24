@@ -1128,3 +1128,4 @@ Authoritative DNS Server
    ↓
 IP Address
 ```
+![alt text](../assets/dns_work.png)
