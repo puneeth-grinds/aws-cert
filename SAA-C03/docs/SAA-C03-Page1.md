@@ -1102,3 +1102,7 @@ This section will talk about AWS service Route53
 - **TLD(top level domain)** - .com, .us etc.
 - **Second Level Domain** - amazon.com, google.com
 ![DNS](../assets/dns.png)
+
+### 8.2 How DNS Works
+- User types `google.com`, and then we check the IP in **browser DNS cache**, **OS DNS cache**
+- If it is not returned from the above, we move to **DNS resolver** and this is usually operated by ISP or company.
