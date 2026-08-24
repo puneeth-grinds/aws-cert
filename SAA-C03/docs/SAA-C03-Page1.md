@@ -1101,3 +1101,4 @@ This section will talk about AWS service Route53
 - **Name servers** - Resolve DNS
 - **TLD(top level domain)** - .com, .us etc.
 - **Second Level Domain** - amazon.com, google.com
+![alt text](dns.png)
