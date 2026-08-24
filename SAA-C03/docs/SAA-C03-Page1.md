@@ -1087,3 +1087,44 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 
 **Note**
 1. RDS feature when used does not require you to change the connection string is Multi-AZ
+
+## 8. ROUTE 53
+This section will talk about AWS service Route53
+
+### 8.1 What is DNS
+- **DNS = Domain Name Space**
+- **Translate human friendly hostnames to IP addresses**
+
+- **Domain Registrar** - Register Domain Names, Amazon Route 53, GoDaddy etc.
+- **DNS Records** - A, AAA, CNAME etc.
+- **Zone file** - All DNS records
+- **Name servers** - Resolve DNS
+- **TLD(top level domain)** - .com, .us etc.
+- **Second Level Domain** - amazon.com, google.com
+![DNS](../assets/dns.png)
+
+### 8.2 How DNS Works
+- User types `google.com`, and then we check the IP in **browser DNS cache**, **OS DNS cache**
+- If it is not returned from the above, we move to **DNS resolver** and this is usually operated by ISP or company.
+- If not found, we ask the **Root DNS Server**, it does not help you with the entire URL. But helps with the `.com` using **TLD Servers**
+- Root DNS Server, **TLD Servers** who is responsible for `.com`
+- then it asks the **Authoritative DNS Server** Which has the IP for the URL, and it will be resolved and given
+
+**Flow**
+```
+Browser
+   ↓
+Browser DNS Cache
+   ↓
+OS DNS Cache
+   ↓
+DNS Resolver
+   ↓
+Root DNS Server
+   ↓
+TLD DNS Server
+   ↓
+Authoritative DNS Server
+   ↓
+IP Address
+```
