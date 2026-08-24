@@ -1088,6 +1088,12 @@ This section talks about AWS managed Databases and in-memory such as ElastiCache
 **Note**
 1. RDS feature when used does not require you to change the connection string is Multi-AZ
 
-## ROUTE 53
-- This section will talk about AWS service Route53
+## 8. ROUTE 53
+This section will talk about AWS service Route53
 
+### 8.1 What is DNS
+- **DNS = Domain Name Space**
+- **Translate human friendly hostnames to IP addresses**
+
+- **Domain Registrar** - Register Domain Names, Amazon Route 53, GoDaddy etc.
+- **DNS Records** - A, AAA, CNAME etc.
