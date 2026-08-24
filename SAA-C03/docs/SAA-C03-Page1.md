@@ -1097,3 +1097,7 @@ This section will talk about AWS service Route53
 
 - **Domain Registrar** - Register Domain Names, Amazon Route 53, GoDaddy etc.
 - **DNS Records** - A, AAA, CNAME etc.
+- **Zone file** - All DNS records
+- **Name servers** - Resolve DNS
+- **TLD(top level domain)** - .com, .us etc.
+- **Second Level Domain** - amazon.com, google.com
