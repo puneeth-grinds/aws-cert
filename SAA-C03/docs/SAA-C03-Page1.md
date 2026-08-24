@@ -1107,7 +1107,7 @@ This section will talk about AWS service Route53
 - User types `google.com`, and then we check the IP in **browser DNS cache**, **OS DNS cache**
 - If it is not returned from the above, we move to **DNS resolver** and this is usually operated by ISP or company.
 - If not found, we ask the **Root DNS Server**, it does not help you with the entire URL. But helps with the `.com` using **TLD Servers**
-- Root DNS Server, then asks **TLD Servers** who is responsible for `.com`
+- Root DNS Server, **TLD Servers** who is responsible for `.com`
 - then it asks the **Authoritative DNS Server** Which has the IP for the URL, and it will be resolved and given
 
 **Flow**
