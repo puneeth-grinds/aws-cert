@@ -1147,3 +1147,10 @@ IP Address
    3. **Value** 
    4.**Routing Policy**
    5. **TTL**
+
+### 8.5 Route 53 - Record Types
+- **A** - maps hostname to IPv4
+- **AAAA** - maps hostname to IPv6
+- **CNAME** - map hostname to another hostname 
+   1. The target domain name can be a A or AAAA record
+- **Name Servers** - Control how traffic is routed for a domain 
