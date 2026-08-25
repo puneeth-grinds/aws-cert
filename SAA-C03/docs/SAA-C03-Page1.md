@@ -1129,3 +1129,8 @@ Authoritative DNS Server
 IP Address
 ```
 ![alt text](../assets/dns_work.png)
+
+
+### 8.3 ### Amazon Route 53
+- **A highly available, manageable, scalable Authoritative DNS**
+- Authoritative means **customer can update the DNS records**
