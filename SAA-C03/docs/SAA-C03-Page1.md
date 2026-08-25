@@ -1155,7 +1155,17 @@ IP Address
    1. The target domain name can be a A or AAAA record
 - **Name Servers** - Control how traffic is routed for a domain 
 
-### Route 53 - Hosted Zones
+### 8.6 Route 53 - Hosted Zones
 - Define how to **route traffic to a domain and its subdomains** 
 - **Public Hosted Zones** - Contains record that specifies how to **route traffic on the internet**
 - **Private Hosted Zones** - Contains record name that specifies how to **route traffic within one or more VPCs**
+
+### 8.7 Route 53 - Records TTL
+- **Time To Live**
+- Cache the result for TTL - said to client 
+- **High TTL**
+   1. Less traffic on Route 53
+   2. Possibly outdated record
+- **Low TTL**
+   1. More traffic on Route53 - More $$
+   2. Possibly latest records
