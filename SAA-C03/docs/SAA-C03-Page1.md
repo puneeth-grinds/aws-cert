@@ -1222,4 +1222,10 @@ IP Address
 - DNS record should have:
    1. Same Name
    2. Same type
-- Can be associcated with health checks 
+- Can be **associcated with health checks**
+
+### 8.13 Latency Based Routing Policy 
+- It redirects to the **resource which is closer to us**
+- It depends on **AWS Regions**
+
+### 8.14 Failover Based Routing Policy 
