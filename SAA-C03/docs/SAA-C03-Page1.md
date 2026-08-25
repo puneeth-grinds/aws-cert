@@ -1238,3 +1238,10 @@ IP Address
 **Health Checks - Private Hosted Zones**
 - Private endpoints cannot be accessed by health **checkers as they are public**
 - We can create **CloudWatch Metric** and associate **CloudWatch Alarm**
+
+### 8.15 Failover Routing Policy 
+- We associate health check, if unhealthy we **route to the secondary - Disaster Recovery resource**
+
+### 8.16 Geolocation Routing Policy
+- Based on **user location**
+- Should create a **default** record in case there is no match 
