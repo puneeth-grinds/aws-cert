@@ -1215,3 +1215,11 @@ IP Address
 - **Route traffic to a single resource** 
 - **No health checks** 
 - **Multiple values can be associated** with the same record, client chooses a **random value from those multiple values**
+
+### 8.12 Weighted Routing Policy 
+- **Control the % of requests go to each specific resource**
+- We assign **each record a relative percentage**
+- DNS record should have:
+   1. Same Name
+   2. Same type
+- Can be associcated with health checks 
