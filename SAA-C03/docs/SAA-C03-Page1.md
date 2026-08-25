@@ -1131,7 +1131,7 @@ IP Address
 ![alt text](../assets/dns_work.png)
 
 
-### 8.3 ### Amazon Route 53
+### 8.3 Amazon Route 53
 - **A highly available, manageable, scalable Authoritative DNS**
 - Authoritative means **customer can update the DNS records**
 - EC2 instance with an IP will be recorded into Route53 as example.com, and when the client asks for example.com -> IP is returned
@@ -1145,7 +1145,7 @@ IP Address
    1. **Domain/Subdomain Name** - example.com
    2. **RecordType** - A or AAAA
    3. **Value** 
-   4.**Routing Policy**
+   4. **Routing Policy**
    5. **TTL**
 
 ### 8.5 Route 53 - Record Types
@@ -1157,5 +1157,5 @@ IP Address
 
 ### Route 53 - Hosted Zones
 - Define how to **route traffic to a domain and its subdomains** 
-- **Public Hosted Zones** - Contains record that specifies how to route traffic on the internet
+- **Public Hosted Zones** - Contains record that specifies how to **route traffic on the internet**
 - **Private Hosted Zones** - Contains record name that specifies how to **route traffic within one or more VPCs**
