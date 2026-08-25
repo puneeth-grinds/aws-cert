@@ -1233,3 +1233,8 @@ IP Address
 - With this we get **Automated Failover Routing**
 - **AWS Health checker sends HTTP health check for our public endpoint**
 - Interval - 30second, 10 seconds - $$ higher 
+- **configure firewall** for the endpoints to allow Route 53 health checkers
+
+**Health Checks - Private Hosted Zones**
+- Private endpoints cannot be accessed by health **checkers as they are public**
+- We can create **CloudWatch Metric** and associate **CloudWatch Alarm**
