@@ -1253,3 +1253,7 @@ IP Address
 ![alt text](../assets/bias_route53.png)
 - Example of user with **bias**
 ![alt text](../assets/nobias_route.png)
+
+### 8.18 IP based Routing Policies
+- Based on **client's IP addresses**
+- Based on **CIDR defined**, match the users IP and send the traffic to a particiular resource
