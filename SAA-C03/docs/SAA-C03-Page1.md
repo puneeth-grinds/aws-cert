@@ -1181,3 +1181,12 @@ IP Address
 **Alias**
 - Points a **hostame to an AWS Resource**
 - Works for both **Root Domain and Non Root Domain**
+- Free of Charge 
+
+### 8.9 Route 53 - Alias Records
+- **Maps hostname to an AWS Resource**
+- **Automatically recognizes change in IP**
+
+**Target groups**
+- Elastic Load Balancers
+- CloudFront Distributions 
