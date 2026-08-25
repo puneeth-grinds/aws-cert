@@ -1138,3 +1138,12 @@ IP Address
 - Route53 is also a **Domain Regitrar**
 ![Route53](../assets/route53.png)
 - Only service which provides 100% availability 
+
+### 8.4 Route53 - Records
+- Here we have records, **which defines how traffic is routed to specific domain**
+- Each record contains:
+   1. **Domain/Subdomain Name** - example.com
+   2. **RecordType** - A or AAAA
+   3. **Value** 
+   4.**Routing Policy**
+   5. **TTL**
