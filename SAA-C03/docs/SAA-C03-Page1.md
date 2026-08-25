@@ -1136,3 +1136,5 @@ IP Address
 - Authoritative means **customer can update the DNS records**
 - EC2 instance with an IP will be recorded into Route53 as example.com, and when the client asks for example.com -> IP is returned
 - Route53 is also a **Domain Regitrar**
+![Route53](../assets/route53.png)
+- Only service which provides 100% availability 
