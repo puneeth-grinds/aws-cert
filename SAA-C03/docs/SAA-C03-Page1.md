@@ -1169,3 +1169,15 @@ IP Address
 - **Low TTL**
    1. More traffic on Route53 - More $$
    2. Possibly latest records
+> **Exam Tip**: TTL is required for every record except for Alias record
+
+### 8.8 CNAME vs Alias 
+- For mapping an Hostname we have two options:
+   1. CNAME
+   2. Alias
+**CNAME**
+- It points a hostname to other hostname 
+- Only for **Non-Root Domain**
+**Alias**
+- Points a **hostame to an AWS Resource**
+- Works for both **Root Domain and Non Root Domain**
