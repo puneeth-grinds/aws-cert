@@ -1210,3 +1210,8 @@ IP Address
    5. Geolocation Routing Policy
    6. Multi-Value Answer Routing Policy
    7. Geoproximity Routing Policy
+
+### 8.11 Simple Routing Policy
+- **Route traffic to a single resource** 
+- **No health checks** 
+- **Multiple values can be associated** with the same record, client chooses a **random value from those multiple values**
