@@ -1134,3 +1134,5 @@ IP Address
 ### 8.3 ### Amazon Route 53
 - **A highly available, manageable, scalable Authoritative DNS**
 - Authoritative means **customer can update the DNS records**
+- EC2 instance with an IP will be recorded into Route53 as example.com, and when the client asks for example.com -> IP is returned
+- Route53 is also a **Domain Regitrar**
