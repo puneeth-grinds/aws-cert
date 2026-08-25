@@ -1128,3 +1128,137 @@ Authoritative DNS Server
    ↓
 IP Address
 ```
+![alt text](../assets/dns_work.png)
+
+
+### 8.3 Amazon Route 53
+- **A highly available, manageable, scalable Authoritative DNS**
+- Authoritative means **customer can update the DNS records**
+- EC2 instance with an IP will be recorded into Route53 as example.com, and when the client asks for example.com -> IP is returned
+- Route53 is also a **Domain Regitrar**
+![Route53](../assets/route53.png)
+- Only service which provides 100% availability 
+
+### 8.4 Route53 - Records
+- Here we have records, **which defines how traffic is routed to specific domain**
+- Each record contains:
+   1. **Domain/Subdomain Name** - example.com
+   2. **RecordType** - A or AAAA
+   3. **Value** 
+   4. **Routing Policy**
+   5. **TTL**
+
+### 8.5 Route 53 - Record Types
+- **A** - maps hostname to IPv4
+- **AAAA** - maps hostname to IPv6
+- **CNAME** - map hostname to another hostname 
+   1. The target domain name can be a A or AAAA record
+- **Name Servers** - Control how traffic is routed for a domain 
+
+### 8.6 Route 53 - Hosted Zones
+- Define how to **route traffic to a domain and its subdomains** 
+- **Public Hosted Zones** - Contains record that specifies how to **route traffic on the internet**
+- **Private Hosted Zones** - Contains record name that specifies how to **route traffic within one or more VPCs**
+
+### 8.7 Route 53 - Records TTL
+- **Time To Live**
+- Cache the result for TTL - said to client 
+- **High TTL**
+   1. Less traffic on Route 53
+   2. Possibly outdated record
+- **Low TTL**
+   1. More traffic on Route53 - More $$
+   2. Possibly latest records
+> **Exam Tip**: TTL is required for every record except for Alias record
+
+### 8.8 CNAME vs Alias 
+- For mapping an Hostname we have two options:
+   1. CNAME
+   2. Alias
+
+**CNAME**
+- It points a hostname to other hostname 
+- Only for **Non-Root Domain*
+- Cannot be done at root/apex
+
+**Alias**
+- Points a **hostame to an AWS Resource**
+- Works for both **Root Domain and Non Root Domain**
+- Free of Charge 
+
+### 8.9 Route 53 - Alias Records
+- **Maps hostname to an AWS Resource**
+- **Automatically recognizes change in IP**
+- Can be used at **root/apex - (eg. example.com)**
+**Target groups**
+- Elastic Load Balancers
+- CloudFront Distributions 
+- API Gateway
+- S3 websites
+- VPC Interface Endpoints
+- Route 53 records in the same hosted zone 
+
+- **You cannot set an Alias record for an EC2 DNS name**
+
+### 8.10 Routing Policies
+- **DNS does not route any traffic, it routes DNS queries**
+- There are types of routing policies:
+   1. Simple Routing Policy
+   2. Weighted Routing Policy
+   3. Failover Routing Policy
+   4. Latency Based Routing Policy
+   5. Geolocation Routing Policy
+   6. Multi-Value Answer Routing Policy
+   7. Geoproximity Routing Policy
+
+### 8.11 Simple Routing Policy
+- **Route traffic to a single resource** 
+- **No health checks** 
+- **Multiple values can be associated** with the same record, client chooses a **random value from those multiple values**
+
+### 8.12 Weighted Routing Policy 
+- **Control the % of requests go to each specific resource**
+- We assign **each record a relative percentage**
+- DNS record should have:
+   1. Same Name
+   2. Same type
+- Can be **associcated with health checks**
+
+### 8.13 Latency Based Routing Policy 
+- It redirects to the **resource which is closer to us**
+- It depends on **AWS Regions**
+
+### 8.14 Health Checks
+- HTTP Health Checks for **only public resources**
+- With this we get **Automated Failover Routing**
+- **AWS Health checker sends HTTP health check for our public endpoint**
+- Interval - 30second, 10 seconds - $$ higher 
+- **configure firewall** for the endpoints to allow Route 53 health checkers
+
+**Health Checks - Private Hosted Zones**
+- Private endpoints cannot be accessed by health **checkers as they are public**
+- We can create **CloudWatch Metric** and associate **CloudWatch Alarm**
+
+### 8.15 Failover Routing Policy 
+- We associate health check, if unhealthy we **route to the secondary - Disaster Recovery resource**
+
+### 8.16 Geolocation Routing Policy
+- Based on **user location**
+- Should create a **default** record in case there is no match 
+
+### 8.17 Geoproximity Routing Policy 
+- Route traffic to your resources **based on geographic location of users and resources**
+- **shift more traffic to resources based on the defined bias** 
+- Example of user with **bias 0**
+![alt text](../assets/bias_route53.png)
+- Example of user with **bias**
+![alt text](../assets/nobias_route.png)
+
+### 8.18 IP based Routing Policies
+- Based on **client's IP addresses**
+- Based on **CIDR defined**, match the users IP and send the traffic to a particiular resource
+
+### 8.19 Routing Policies - Multi Value
+- **Use when routing traffic to multiple resources** 
+- Can be **associated with health check**
+- Upto **8 healthy records** are returned for each Multi-value query 
