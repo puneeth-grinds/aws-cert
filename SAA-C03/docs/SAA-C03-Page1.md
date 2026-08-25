@@ -1175,9 +1175,12 @@ IP Address
 - For mapping an Hostname we have two options:
    1. CNAME
    2. Alias
+
 **CNAME**
 - It points a hostname to other hostname 
-- Only for **Non-Root Domain**
+- Only for **Non-Root Domain*
+- Cannot be done at root/apex
+
 **Alias**
 - Points a **hostame to an AWS Resource**
 - Works for both **Root Domain and Non Root Domain**
@@ -1186,7 +1189,7 @@ IP Address
 ### 8.9 Route 53 - Alias Records
 - **Maps hostname to an AWS Resource**
 - **Automatically recognizes change in IP**
-
+- Can be used at **root/apex - (eg. example.com)**
 **Target groups**
 - Elastic Load Balancers
 - CloudFront Distributions 
@@ -1196,3 +1199,14 @@ IP Address
 - Route 53 records in the same hosted zone 
 
 - **You cannot set an Alias record for an EC2 DNS name**
+
+### 8.10 Routing Policies
+- **DNS does not route any traffic, it routes DNS queries**
+- There are types of routing policies:
+   1. Simple Routing Policy
+   2. Weighted Routing Policy
+   3. Failover Routing Policy
+   4. Latency Based Routing Policy
+   5. Geolocation Routing Policy
+   6. Multi-Value Answer Routing Policy
+   7. Geoproximity Routing Policy
