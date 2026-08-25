@@ -1154,3 +1154,8 @@ IP Address
 - **CNAME** - map hostname to another hostname 
    1. The target domain name can be a A or AAAA record
 - **Name Servers** - Control how traffic is routed for a domain 
+
+### Route 53 - Hosted Zones
+- Define how to **route traffic to a domain and its subdomains** 
+- **Public Hosted Zones** - Contains record that specifies how to route traffic on the internet
+- **Private Hosted Zones** - Contains record name that specifies how to **route traffic within one or more VPCs**
