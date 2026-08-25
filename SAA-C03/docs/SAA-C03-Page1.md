@@ -1228,4 +1228,8 @@ IP Address
 - It redirects to the **resource which is closer to us**
 - It depends on **AWS Regions**
 
-### 8.14 Failover Based Routing Policy 
+### 8.14 Health Checks
+- HTTP Health Checks for **only public resources**
+- With this we get **Automated Failover Routing**
+- **AWS Health checker sends HTTP health check for our public endpoint**
+- Interval - 30second, 10 seconds - $$ higher 
