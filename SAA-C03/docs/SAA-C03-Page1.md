@@ -1190,3 +1190,9 @@ IP Address
 **Target groups**
 - Elastic Load Balancers
 - CloudFront Distributions 
+- API Gateway
+- S3 websites
+- VPC Interface Endpoints
+- Route 53 records in the same hosted zone 
+
+- **You cannot set an Alias record for an EC2 DNS name**
