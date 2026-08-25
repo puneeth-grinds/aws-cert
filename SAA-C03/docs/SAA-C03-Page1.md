@@ -1245,3 +1245,11 @@ IP Address
 ### 8.16 Geolocation Routing Policy
 - Based on **user location**
 - Should create a **default** record in case there is no match 
+
+### 8.17 Geoproximity Routing Policy 
+- Route traffic to your resources **based on geographic location of users and resources**
+- **shift more traffic to resources based on the defined bias** 
+- Example of user with **bias 0**
+![alt text](../assets/bias_route53.png)
+- Example of user with **bias**
+![alt text](../assets/nobias_route.png)
