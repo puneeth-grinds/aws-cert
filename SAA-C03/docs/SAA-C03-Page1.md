@@ -1257,3 +1257,8 @@ IP Address
 ### 8.18 IP based Routing Policies
 - Based on **client's IP addresses**
 - Based on **CIDR defined**, match the users IP and send the traffic to a particiular resource
+
+### 8.19 Routing Policies - Multi Value
+- **Use when routing traffic to multiple resources** 
+- Can be **associated with health check**
+- Upto **8 healthy records** are returned for each Multi-value query 
