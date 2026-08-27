@@ -825,7 +825,7 @@ Network Load Balancer & Gateway Load Balancer
 
 ### 6.9 SSL/TLS - Certificates
 - SSL certs allow **traffic** between client and load balancer to be **encrypted** in transit (**in-flight encryption**)
-- **SSL - Secure Socker Layer**
+- **SSL - Secure Socket Layer**
 - **TLS - Transport Layer Security**
 - Issued by **Certificates Authorities** (CA)
 - Expiration date and needs to be renewed
@@ -1178,7 +1178,7 @@ IP Address
 
 **CNAME**
 - It points a hostname to other hostname 
-- Only for **Non-Root Domain*
+- Only for **Non-Root Domain**
 - Cannot be done at root/apex
 
 **Alias**
@@ -1190,6 +1190,7 @@ IP Address
 - **Maps hostname to an AWS Resource**
 - **Automatically recognizes change in IP**
 - Can be used at **root/apex - (eg. example.com)**
+
 **Target groups**
 - Elastic Load Balancers
 - CloudFront Distributions 
@@ -1273,3 +1274,5 @@ IP Address
    1. Allows your DNS Resolvers On-Prem to forward DNS queries to Route53 Resolvers
 - Outbound Endpoint:
    - **Route 53 Resolver forwards DNS queries to DNS Resolvers** 
+
+> **Exam Tip**If we purchased a domain on another Domain Registar(GoDaddy), and want to host it on Route53. We have to create a public hosted zone and update the 3rd part NS records
