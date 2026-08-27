@@ -303,3 +303,13 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 **Amazon S3 Glacier Flexible Retrieval**
 - **Expedited (1 to 5 minutes), standard(3 to 5 hours), Bulk (5 to 12 hours)**
 - **Minimum duration of 90 days** 
+
+**Amazon S3 Glacier Deep Archive**
+- **Long term storage** 
+- **Lowest of all in cost**
+- **Standard (12 hours), Bulk 48 hours**
+- **Minimum 180 days**
+
+**Amazon S3 Intelligent-Tiering**
+- **Move objects automatically based on usage** 
+- **Auto-tiering and monitoring fee but not retrieval fee**
