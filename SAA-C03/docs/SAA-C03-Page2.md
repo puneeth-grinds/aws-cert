@@ -15,4 +15,14 @@ This section covers the topic of solutions architecture and their design
 
 **Scenario 2 - Increase in No Users**
 - **Vertical Scaling** - Increased the instance size from t3.micro to M5
+- **Result** - The upgrading had downtime and users were unhappy
 
+**Scenario 3 - Scaling Horizontally**
+- **Horizontal scaling:** Instance size M5 itself 
+- **Number of instances = Number of Elastic IP**
+- **Result** - Users are happy
+
+**Scenario 4 - Route53**
+- **Route53** - setup **A record** and return the IP for the EC2 instances and **eliminate Elastic IP**
+- We cannot **scale instances**
+- **Result** - Optimization
