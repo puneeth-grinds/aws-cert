@@ -251,3 +251,10 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 ### 10.4 Amazon S3 - static website 
 - Website URL depends on **region hosted**
 - S3 can host static website and are accessible via internet 
+
+### 10.5 Amazon S3 - Versioning 
+- Enabled at **bucket level** 
+- **Versions the upload to the objects** 
+- Uses:
+    1. Restore
+    2. Backup/rollback
