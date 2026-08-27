@@ -213,3 +213,14 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 4. Hybrid Cloud storage 
 5. Application hosting & Media hosting
 6. Static website
+
+### 10.2 Amazon S3 - Buckets 
+- Buckets are **directories** inside S3
+- **Regional level**
+- Naming was globally unique previously - We now have account regional name
+- **AWS adds suffix** to it 
+- Naming constraints:
+    1. No Uppercase, No Underscore
+    2. Not an IP
+    3. Must start with lowercase/Number
+    4. Not start with the prefix xn--
