@@ -248,4 +248,6 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
     2. **Force objects to be encrypted**
     3. **Grant access to another account** 
 
-    
+### 10.4 Amazon S3 - static website 
+- Website URL depends on **region hosted**
+- S3 can host static website and are accessible via internet 
