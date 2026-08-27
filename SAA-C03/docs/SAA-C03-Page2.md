@@ -209,4 +209,7 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 **Use cases**
 1. Backup and storage 
 2. Disaster recovery 
-3. 
+3. Archive
+4. Hybrid Cloud storage 
+5. Application hosting & Media hosting
+6. Static website
