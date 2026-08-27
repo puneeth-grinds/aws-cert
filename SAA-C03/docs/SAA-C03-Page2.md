@@ -41,3 +41,6 @@ This section covers the topic of solutions architecture and their design
 - Use **Multi AZ**
 - Scale in and Scale out on demand 
 - **Result**- Almost a good architecture
+
+**Scenario 8 - Cost optimization**
+- We now know, we atleast need one EC2 instance running in each AZ; Choose **Reserved instances instead of On-Demand**
