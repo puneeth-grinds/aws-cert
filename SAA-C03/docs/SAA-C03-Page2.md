@@ -229,3 +229,5 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 - **They are files and have key**
 - Key defines the **full path**
 - **Key = prefix + object name**  
+- **Max size - 50TB**; If greater use **Multi-part upload**
+- **Tags and versioning are available**
