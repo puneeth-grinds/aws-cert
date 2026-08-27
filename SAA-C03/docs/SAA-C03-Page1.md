@@ -1274,3 +1274,5 @@ IP Address
    1. Allows your DNS Resolvers On-Prem to forward DNS queries to Route53 Resolvers
 - Outbound Endpoint:
    - **Route 53 Resolver forwards DNS queries to DNS Resolvers** 
+
+> **Exam Tip**If we purchased a domain on another Domain Registar(GoDaddy), and want to host it on Route53. We have to create a public hosted zone and update the 3rd part NS records
