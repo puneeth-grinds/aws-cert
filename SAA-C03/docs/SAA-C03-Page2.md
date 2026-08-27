@@ -271,3 +271,14 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
     1. Log aggregation
     2. live replication 
 
+- After enabling replication, **only new objects are replicated** 
+- Existing can be done using **S3 batch replication** 
+
+### 10.7 S3 Storage Classes
+
+**S3 Standard**
+- **99.99% availability**
+- **Frequently accessed data**
+- **Low Latency and high throughput**
+- Use cases: Big data, gaming 
+
