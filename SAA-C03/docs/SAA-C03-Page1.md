@@ -1178,7 +1178,7 @@ IP Address
 
 **CNAME**
 - It points a hostname to other hostname 
-- Only for **Non-Root Domain*
+- Only for **Non-Root Domain**
 - Cannot be done at root/apex
 
 **Alias**
@@ -1190,6 +1190,7 @@ IP Address
 - **Maps hostname to an AWS Resource**
 - **Automatically recognizes change in IP**
 - Can be used at **root/apex - (eg. example.com)**
+
 **Target groups**
 - Elastic Load Balancers
 - CloudFront Distributions 
