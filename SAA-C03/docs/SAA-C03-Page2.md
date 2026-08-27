@@ -32,5 +32,12 @@ This section covers the topic of solutions architecture and their design
 - Load balancer also has **Health checks**
 - We use **Alias Record**; **Route53 -> AWS Resource**
 
-**Scenario 5 - Auto Scaling Group**
-- For the above architecture use ASG
+**Scenario 6 - Auto Scaling Group**
+- For the above architecture use ASG, with **single AZ**
+- Scale in and Scale out on demand 
+- **Result**- Almost a good architecture
+
+**Scenario 7 - Disaster Recovery**
+- Use **Multi AZ**
+- Scale in and Scale out on demand 
+- **Result**- Almost a good architecture
