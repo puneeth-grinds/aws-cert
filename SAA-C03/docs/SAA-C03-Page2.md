@@ -313,3 +313,9 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 **Amazon S3 Intelligent-Tiering**
 - **Move objects automatically based on usage** 
 - **Auto-tiering and monitoring fee but not retrieval fee**
+
+**S3 Express One Zone**
+- **High performance, Single AZ**
+- **Stored in directories instead of buckets**
+- **Milli-second latency**
+
