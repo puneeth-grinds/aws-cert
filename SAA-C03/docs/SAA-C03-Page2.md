@@ -183,7 +183,6 @@ A user logs in and accesses the application through the first EC2 instance. Afte
 
 ----
 
-
 ### 9.4 Elastic BeanStalk
 - **Platform as a Service (PaaS)**
 - Developer centric view of deploying an application on AWS
@@ -200,3 +199,14 @@ A user logs in and accesses the application through the first EC2 instance. Afte
 - Application Version
 - Environment 
 - Tiers
+
+## 10. Amazon S3 Overview
+This section covers S3 overview topics for SAA C03. However, we do have S3 Advanced in the next section 
+
+### 10.1 Amazon S3 Introduction & Use Cases
+- **Infintely scaling resource**
+
+**Use cases**
+1. Backup and storage 
+2. Disaster recovery 
+3. 
