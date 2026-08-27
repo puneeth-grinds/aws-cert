@@ -292,3 +292,14 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 99.5%
 - **Single Az**; data lost is AZ is impacted 
 
+**S3 Glacier Storage**
+- **Lowest price**
+- **Pricing: Storage + object retrieval cost** 
+
+**Amazon S3 Glacier Instant Retrieval**
+- **Millisecond retrieval**
+- **Minimum duration of 90 days**
+
+**Amazon S3 Glacier Flexible Retrieval**
+- **Expedited (1 to 5 minutes), standard(3 to 5 hours), Bulk (5 to 12 hours)**
+- **Minimum duration of 90 days** 
