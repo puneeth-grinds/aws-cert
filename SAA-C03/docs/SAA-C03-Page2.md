@@ -231,3 +231,17 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 - **Key = prefix + object name**  
 - **Max size - 50TB**; If greater use **Multi-part upload**
 - **Tags and versioning are available**
+
+### 10.4 Amazon S3 - Security
+- **User-Based**:
+    1. IAM Policies
+    2. Bucket Policies
+        - allow users to come in/ also from cross account 
+        - Make bucket public
+    3. Object Access Control List 
+- Encrypt using KMS 
+
+- **S3 Bucket Policies**
+
+
+    
