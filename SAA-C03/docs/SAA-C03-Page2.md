@@ -47,4 +47,7 @@ This section covers the topic of solutions architecture and their design
 
 ![alt text](../assets/SAA1.png)\
 
-### 9.2 Statefull Web App: MyClothes.com - Solution Architecture 1
+### 9.2 Statefull Web App: MyClothes.com - Solution Architecture 
+- Allow people **buy clothes online**
+- **Shopping cart** 
+- **Hundreds of user at a time**
