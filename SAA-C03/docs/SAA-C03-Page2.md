@@ -242,6 +242,10 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 - Encrypt using KMS 
 
 - **S3 Bucket Policies**
-
+- JSON based policies
+- It can be used for:
+    1. **Grant public access to the bucket**
+    2. **Force objects to be encrypted**
+    3. **Grant access to another account** 
 
     
