@@ -89,3 +89,10 @@ This section covers the topic of solutions architecture and their design
 - **Result**: Better Scalability 
 
 
+**Scenario 2 :EBS Volume**
+- We can use EBS volume to store images
+- **Result** - **Can attach to one instance at a time**
+
+**Scenario 3 :EFS instead of EBS Volume**
+- We can use **EFS** to store images
+- **Result** - **Can attach to multiple instance at a time**
