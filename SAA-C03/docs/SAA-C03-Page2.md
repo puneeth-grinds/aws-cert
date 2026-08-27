@@ -197,4 +197,6 @@ A user logs in and accesses the application through the first EC2 instance. Afte
 
 ### 9.5 Elastic Beanstalk - Components
 - Application 
+- Application Version
 - Environment 
+- Tiers
