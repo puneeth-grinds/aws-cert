@@ -79,3 +79,13 @@ This section covers the topic of solutions architecture and their design
 - **Use multi AZ** for all the features used 
 - Use **Security group** where needed 
 
+![alt text](../assets/SAA2-2.png)
+
+### 9.3 Statefull Web App: MyWordPress.com - Solution Architecture 3
+- **Fully Scalable WordPress website** 
+- Access websites and display correct picture updates 
+**Scenario 1 : Scenario 1 Architecture**
+- we pick the same architecure from Solution Architecture 1 - And **use Aurora instead of RDS** 
+- **Result**: Better Scalability 
+
+
