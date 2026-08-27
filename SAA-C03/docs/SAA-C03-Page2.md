@@ -74,3 +74,8 @@ This section covers the topic of solutions architecture and their design
 **Scenario 5 : RDS & RDS - Read Replica**
 - **Store and retrieve user data on RDS**
 - We can also make use of **RDS Read Replicas** for Read intensive tasks 
+
+**Scenario 6 : Multi AZ - Disaster Recovery**
+- **Use multi AZ** for all the features used 
+- Use **Security group** where needed 
+
