@@ -68,4 +68,9 @@ This section covers the topic of solutions architecture and their design
 
 **Scenario 4 : Server Session**
 - Send server session and have **ElastiCache** in the backend with the **session ID**
-- Next time user sends a request, use the session Id to retrieve the information from the ElastiCache
+- Next time user sends a request, use the **session Id to retrieve the information from the ElastiCache**
+- **Result**: faster performance, better security 
+
+**Scenario 5 : RDS & RDS - Read Replica**
+- **Store and retrieve user data on RDS**
+- We can also make use of **RDS Read Replicas** for Read intensive tasks 
