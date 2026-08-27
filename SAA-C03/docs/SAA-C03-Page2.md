@@ -187,4 +187,14 @@ A user logs in and accesses the application through the first EC2 instance. Afte
 ### 9.4 Elastic BeanStalk
 - **Platform as a Service (PaaS)**
 - Developer centric view of deploying an application on AWS
+- Managed service:
+    1. Scaling 
+    2. Deploying 
+    3. Load balacning 
+    4. Provisioning
+- **Developer manages the code**
+- **Service = free; pay for underlying resources**
 
+### 9.5 Elastic Beanstalk - Components
+- Application 
+- Environment 
