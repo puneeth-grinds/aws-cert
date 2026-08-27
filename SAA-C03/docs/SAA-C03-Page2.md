@@ -44,3 +44,7 @@ This section covers the topic of solutions architecture and their design
 
 **Scenario 8 - Cost optimization**
 - We now know, we atleast need one EC2 instance running in each AZ; Choose **Reserved instances instead of On-Demand**
+
+![alt text](../assets/SAA1.png)\
+
+### 9.2 Statefull Web App: MyClothes.com - Solution Architecture 1
