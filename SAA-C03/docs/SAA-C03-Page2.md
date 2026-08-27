@@ -224,3 +224,8 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
     2. Not an IP
     3. Must start with lowercase/Number
     4. Not start with the prefix xn--
+
+### 10.3 Amazon S3 - Objects
+- **They are files and have key**
+- Key defines the **full path**
+- **Key = prefix + object name**  
