@@ -64,4 +64,8 @@ This section covers the topic of solutions architecture and their design
 **Scenario 3 : Cookies**
 - Here, the **user stores the shopping content**, instead of Ec2 instances
 - Done **via Web cookies**
- 
+- **Result**: Stateless achieved, but **cookies can be altered** and must be *less than 4KB*
+
+**Scenario 4 : Server Session**
+- Send server session and have **ElastiCache** in the backend with the **session ID**
+- Next time user sends a request, use the session Id to retrieve the information from the ElastiCache
