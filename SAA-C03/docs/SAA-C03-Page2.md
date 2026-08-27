@@ -258,3 +258,16 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 - Uses:
     1. Restore
     2. Backup/rollback
+
+### 10.6 S3 Repication 
+
+**CRR - Cross Region Replication & SRR - Same Region Replication**
+- **Asynchronous replication** 
+- Inter-Region and Same-Region
+- **Use cases CRR:**
+    1. Compliance
+    2. Lower latency
+- **Use cases SRR**
+    1. Log aggregation
+    2. live replication 
+
