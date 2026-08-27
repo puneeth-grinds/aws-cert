@@ -26,3 +26,11 @@ This section covers the topic of solutions architecture and their design
 - **Route53** - setup **A record** and return the IP for the EC2 instances and **eliminate Elastic IP**
 - We cannot **scale instances**
 - **Result** - Optimization
+
+**Scenario 5 - Load Balancing**
+- **Load Balancer:** **Public facing load balancer, EC2 instances protected by Security Group**
+- Load balancer also has **Health checks**
+- We use **Alias Record**; **Route53 -> AWS Resource**
+
+**Scenario 5 - Auto Scaling Group**
+- For the above architecture use ASG
