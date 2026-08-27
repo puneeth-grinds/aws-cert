@@ -1262,3 +1262,7 @@ IP Address
 - **Use when routing traffic to multiple resources** 
 - Can be **associated with health check**
 - Upto **8 healthy records** are returned for each Multi-value query 
+
+### 8.20 Route 53 Resolver
+- **Answers DNS queries for local domain names for EC2 instances, records in private hosted zone**
+- **Hybrid DNS** - resolving DNS queries between VPC(Route53 Resolver) and your networks(DNS Resolvers)
