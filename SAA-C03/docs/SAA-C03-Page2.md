@@ -180,3 +180,11 @@ A user logs in and accesses the application through the first EC2 instance. Afte
 - Use Amazon EFS to store images.
 
 **Result:** Amazon EFS can be attached to multiple EC2 instances at the same time.
+
+----
+
+
+### 9.4 Elastic BeanStalk
+- **Platform as a Service (PaaS)**
+- Developer centric view of deploying an application on AWS
+
