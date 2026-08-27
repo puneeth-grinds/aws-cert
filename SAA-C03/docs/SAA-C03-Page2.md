@@ -47,7 +47,12 @@ This section covers the topic of solutions architecture and their design
 
 ![alt text](../assets/SAA1.png)\
 
-### 9.2 Statefull Web App: MyClothes.com - Solution Architecture 
+### 9.2 Statefull Web App: MyClothes.com - Solution Architecture 2
 - Allow people **buy clothes online**
 - **Shopping cart** 
 - **Hundreds of user at a time**
+
+**Scenario 1 : Scenario 1 Architecture**
+- we pick the same architecure from Solution Architecture 1
+ ![alt text](../assets/SAA2.png)
+- A user logs in and accesses the application through the first EC2 instance. After adding an item of clothing to the shopping cart, the user attempts to open the cart. However, the request is routed to the second EC2 instance, where the session data is unavailable, causing the cart to appear empty.
