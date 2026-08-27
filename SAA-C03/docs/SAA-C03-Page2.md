@@ -1,98 +1,185 @@
-# AWS Certified Solutions Architect – Associate (SAA-C03) Vol 2
+# 9.0 Solutions Architecture Discussions
 
-## 9.0 Solutions Architecure Discussions 
-This section covers the topic of solutions architecture and their design 
+This section covers solutions architecture concepts and their design.
 
-### 9.1 Statless Web App: WhatIsTheTime.com - Solution Architecture 1
-- Allows people **know what the current time**
-- **No Database**
-- Start small - **Accept downtime**
+## 9.1 Stateless Web Application: WhatIsTheTime.com — Solution Architecture 1
 
-**Scenario 1 : Initially**
-- Public EC2 instance
-- Elastic IP - static public IP
-- **Result**: Application is working alright.
+### Requirements
 
-**Scenario 2 - Increase in No Users**
-- **Vertical Scaling** - Increased the instance size from t3.micro to M5
-- **Result** - The upgrading had downtime and users were unhappy
+- Allows users to determine the current time
+- Does not require a database
+- Starts with a small infrastructure
+- Can initially accept downtime
 
-**Scenario 3 - Scaling Horizontally**
-- **Horizontal scaling:** Instance size M5 itself 
-- **Number of instances = Number of Elastic IP**
-- **Result** - Users are happy
+### Scenario 1: Initial Architecture
 
-**Scenario 4 - Route53**
-- **Route53** - setup **A record** and return the IP for the EC2 instances and **eliminate Elastic IP**
-- We cannot **scale instances**
-- **Result** - Optimization
+**Architecture:**
 
-**Scenario 5 - Load Balancing**
-- **Load Balancer:** **Public facing load balancer, EC2 instances protected by Security Group**
-- Load balancer also has **Health checks**
-- We use **Alias Record**; **Route53 -> AWS Resource**
+- One public EC2 instance
+- One Elastic IP address providing a static public IP
 
-**Scenario 6 - Auto Scaling Group**
-- For the above architecture use ASG, with **single AZ**
-- Scale in and Scale out on demand 
-- **Result**- Almost a good architecture
+**Result:** The application works as expected.
 
-**Scenario 7 - Disaster Recovery**
-- Use **Multi AZ**
-- Scale in and Scale out on demand 
-- **Result**- Almost a good architecture
+### Scenario 2: Increase in the Number of Users
 
-**Scenario 8 - Cost optimization**
-- We now know, we atleast need one EC2 instance running in each AZ; Choose **Reserved instances instead of On-Demand**
+**Approach: Vertical scaling**
 
-![alt text](../assets/SAA1.png)\
+- Increase the EC2 instance size from `t3.micro` to `M5`.
 
-### 9.2 Statefull Web App: MyClothes.com - Solution Architecture 2
-- Allow people **buy clothes online**
-- **Shopping cart** 
-- **Hundreds of user at a time**
+**Result:** Upgrading the instance causes downtime, leaving users dissatisfied.
 
-**Scenario 1 : Scenario 1 Architecture**
-- we pick the same architecure from Solution Architecture 1
- ![alt text](../assets/SAA2.png)
-- A user logs in and accesses the application through the first EC2 instance. After adding an item of clothing to the shopping cart, the user attempts to open the cart. However, the request is routed to the second EC2 instance, where the session data is unavailable, causing the cart to appear empty.
+----
+### Scenario 3: Horizontal Scaling
 
-**Scenario 2 : Stickyness**
-- This time, the request's of the same user goes to the same EC2 instance
-- **Result**: Improvement; But if the **Ec2 instance is terminated for some reason. We still loose the data**
+**Approach:**
 
-**Scenario 3 : Cookies**
-- Here, the **user stores the shopping content**, instead of Ec2 instances
-- Done **via Web cookies**
-- **Result**: Stateless achieved, but **cookies can be altered** and must be *less than 4KB*
+- Continue using `M5` instances.
+- Add more EC2 instances.
+- Assign one Elastic IP address to each instance.
 
-**Scenario 4 : Server Session**
-- Send server session and have **ElastiCache** in the backend with the **session ID**
-- Next time user sends a request, use the **session Id to retrieve the information from the ElastiCache**
-- **Result**: faster performance, better security 
+**Result:** The additional capacity improves the user experience.
 
-**Scenario 5 : RDS & RDS - Read Replica**
-- **Store and retrieve user data on RDS**
-- We can also make use of **RDS Read Replicas** for Read intensive tasks 
+#### Scenario 4: Route 53
 
-**Scenario 6 : Multi AZ - Disaster Recovery**
-- **Use multi AZ** for all the features used 
-- Use **Security group** where needed 
+**Approach:**
 
-![alt text](../assets/SAA2-2.png)
+- Configure an **A record** in Route 53.
+- Return the IP addresses of the EC2 instances.
+- Eliminate the Elastic IP addresses.
 
-### 9.3 Statefull Web App: MyWordPress.com - Solution Architecture 3
-- **Fully Scalable WordPress website** 
-- Access websites and display correct picture updates 
-**Scenario 1 : Scenario 1 Architecture**
-- we pick the same architecure from Solution Architecture 1 - And **use Aurora instead of RDS** 
-- **Result**: Better Scalability 
+**Limitation:** Scaling the EC2 instances remains difficult.
 
+**Result:** The architecture is more optimized.
 
-**Scenario 2 :EBS Volume**
-- We can use EBS volume to store images
-- **Result** - **Can attach to one instance at a time**
+### Scenario 5: Load Balancing
 
-**Scenario 3 :EFS instead of EBS Volume**
-- We can use **EFS** to store images
-- **Result** - **Can attach to multiple instance at a time**
+**Approach:**
+
+- Introduce a public-facing load balancer.
+- Protect the EC2 instances using a security group.
+- Configure health checks on the load balancer.
+- Use an **Alias record** to route traffic from Route 53 to the AWS resource.
+
+**Request flow:**
+
+`Route 53 → Load Balancer → EC2 Instances`
+
+### Scenario 6: Auto Scaling Group
+
+**Approach:**
+
+- Add an Auto Scaling Group to the existing architecture.
+- Deploy the architecture within a single Availability Zone.
+- Scale in and scale out based on demand.
+
+**Result:** The solution is close to being a good architecture.
+
+### Scenario 7: Disaster Recovery
+
+**Approach:**
+
+- Deploy the architecture across multiple Availability Zones.
+- Continue scaling in and out based on demand.
+
+**Result:** The solution is close to being a good architecture and provides improved disaster recovery.
+
+### Scenario 8: Cost Optimization
+
+At least one EC2 instance must run in each Availability Zone. Because these instances are always required, use **Reserved Instances** instead of **On-Demand Instances** to reduce costs.
+
+---
+
+## 9.2 Stateful Web Application: MyClothes.com — Solution Architecture 2
+
+#### Requirements
+
+- Allows users to purchase clothes online
+- Provides a shopping cart
+- Supports hundreds of users at a time
+
+### Scenario 1: Initial Architecture
+
+**Approach:**
+
+- Reuse the architecture from Solution Architecture 1.
+
+**Problem:**
+
+A user logs in and accesses the application through the first EC2 instance. After adding an item of clothing to the shopping cart, the user attempts to open the cart. However, the request is routed to the second EC2 instance, where the session data is unavailable. As a result, the cart appears empty.
+
+### Scenario 2: Session Stickiness
+
+**Approach:**
+
+- Enable session stickiness so that requests from the same user are routed to the same EC2 instance.
+
+**Result:** This improves the user experience. However, if the EC2 instance is terminated, the session data is still lost.
+
+#### Scenario 3: Cookies
+
+**Approach:**
+
+- Store the shopping-cart contents on the user's device instead of on the EC2 instances.
+- Store this information using web cookies.
+
+**Result:** The application becomes stateless. However, cookies can be modified and must be smaller than 4 KB.
+
+### Scenario 4: Server-Side Sessions
+
+**Approach:**
+
+- Create a server-side session.
+- Store the session information in ElastiCache using a session ID.
+- When the user sends another request, use the session ID to retrieve the corresponding information from ElastiCache.
+
+**Result:** This provides faster performance and improved security.
+
+#### Scenario 5: RDS and RDS Read Replicas
+
+**Approach:**
+
+- Store and retrieve user data using Amazon RDS.
+- Use RDS Read Replicas for read-intensive workloads.
+
+#### Scenario 6: Multi-AZ Disaster Recovery
+
+**Approach:**
+
+- Use a Multi-AZ architecture for all applicable components.
+- Configure security groups wherever required.
+
+---
+
+### 9.3 Stateful Web Application: MyWordPress.com — Solution Architecture 3
+
+#### Requirements
+
+- Provides a fully scalable WordPress website
+- Allows users to access the website and view the correct image updates
+
+#### Scenario 1: Initial Architecture
+
+**Approach:**
+
+- Reuse the architecture from Solution Architecture 1.
+- Use Amazon Aurora instead of Amazon RDS.
+
+**Result:** The application provides better scalability.
+
+#### Scenario 2: EBS Volume
+
+**Approach:**
+
+- Use an EBS volume to store images.
+
+**Result:** An EBS volume can be attached to only one EC2 instance at a time.
+
+#### Scenario 3: EFS Instead of EBS
+
+**Approach:**
+
+- Use Amazon EFS to store images.
+
+**Result:** Amazon EFS can be attached to multiple EC2 instances at the same time.
+
+---
