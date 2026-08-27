@@ -282,3 +282,13 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 - **Low Latency and high throughput**
 - Use cases: Big data, gaming 
 
+**S3 Standard-Infrequent Access**
+- **99.9% availability**
+- **Lower cost compared to S3 Standard**
+- **Less frequent accessed**, but when accessed **rapid access**
+- Use case: Disaster Recovery
+
+**S3 One Zone-Infrequent Access**
+99.5%
+- **Single Az**; data lost is AZ is impacted 
+
