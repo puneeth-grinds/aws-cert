@@ -56,3 +56,12 @@ This section covers the topic of solutions architecture and their design
 - we pick the same architecure from Solution Architecture 1
  ![alt text](../assets/SAA2.png)
 - A user logs in and accesses the application through the first EC2 instance. After adding an item of clothing to the shopping cart, the user attempts to open the cart. However, the request is routed to the second EC2 instance, where the session data is unavailable, causing the cart to appear empty.
+
+**Scenario 2 : Stickyness**
+- This time, the request's of the same user goes to the same EC2 instance
+- **Result**: Improvement; But if the **Ec2 instance is terminated for some reason. We still loose the data**
+
+**Scenario 3 : Cookies**
+- Here, the **user stores the shopping content**, instead of Ec2 instances
+- Done **via Web cookies**
+ 
