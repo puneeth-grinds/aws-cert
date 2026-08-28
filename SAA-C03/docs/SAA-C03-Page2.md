@@ -400,5 +400,15 @@ Solution:
 - To identify fast growing, unused buckets
 
 **Cost Optimization**
-- Provide insights to manage and o**ptimize storage costs**
+- Provide insights to manage and **optimize storage costs**
 - To identify which objects can be transitioned for better cost savings
+
+**Data-Protection Metrics**
+- **data protection feature insights**
+- Enable versioning etc.
+
+**Access Management metrics**
+- Insights for S3 Object ownership
+
+**Event Metrics**
+- Insights into **S3 Event nofitication**
