@@ -357,3 +357,9 @@ Solution:
 ### 11.3 S3 Requester Pays
 - Bucket owner pays for all S3 storage and data transfer cost associated with it 
 - **With Requester Pays bucket**, the requester instead of the bucker owner pays the cost of the request and downloads the data from the bucket
+- **Requester must be authenticated**
+
+### 11.4 S3 Event Notifications
+- Event are actions happening inside the S3 bucket
+- Event notifications can be sent to certain **destination endpoints such as SNS, SQS, Lambda functions**
+- We need **IAM policies** configured for performing Event notifications/Actions 
