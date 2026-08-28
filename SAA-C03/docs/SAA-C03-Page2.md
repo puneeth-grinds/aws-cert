@@ -383,3 +383,7 @@ Solution:
 - **Peform bulk operations on exisiting S3 objects with a single request**
 - **Encrypt all unencrypted objects** 
 ![alt text](../assets/S3_batch_operation.png)
+
+### 11.7 S3 - Storage Lens 
+- **Understand, Analyze and optimize storage across entire AWS organization**
+- Aggregate data for Organization level, specific accounts,regions, buckets or prefixes
