@@ -393,3 +393,12 @@ Solution:
 - **Preconfigured** by Amazon S3
 - **Multi-Region and Multi-Account data**
 - **Can't be deleted, but can be disabled**
+
+### 11.8 Storage Metrics
+**Summary Metrics**
+- General insight about S3 storage 
+- To identify fast growing, unused buckets
+
+**Cost Optimization**
+- Provide insights to manage and o**ptimize storage costs**
+- To identify which objects can be transitioned for better cost savings
