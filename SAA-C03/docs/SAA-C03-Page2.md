@@ -340,3 +340,8 @@ This covers topics such as Lifecycle rules, Event notifications, Performance, Ba
 Solution:
 - S3 source image can be on the **standard class for 60 days** and then transition them to **Glacier after 60 days**
 - **Thumbnails** can be on **One-Zone IA**, as they can be **recreated** if lost. Lifecycle config to **delete after 60 days**
+
+**Amazon S3 - Lifecycle Rules (Scenario 2)**
+> A rule in your company states that you should be able to recover your deleted S3 objects immediately for 30 days, although this may happen rarely. After this time, and for up to 365 days, deleted objects should be recoverable within 48 hours.
+Solution:
+- Enable **S3 versioning** for marking deleted objects and can be recovered
