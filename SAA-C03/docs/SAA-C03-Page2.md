@@ -353,3 +353,7 @@ Solution:
 - Recommendation:
     1. Standard and Standard IA
     2. Do **NOT** work for **One-Zone IA or Glacier**
+
+### 11.3 S3 Requester Pays
+- Bucket owner pays for all S3 storage and data transfer cost associated with it 
+- **With Requester Pays bucket**, the requester instead of the bucker owner pays the cost of the request and downloads the data from the bucket
