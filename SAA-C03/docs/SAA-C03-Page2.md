@@ -337,4 +337,6 @@ This covers topics such as Lifecycle rules, Event notifications, Performance, Ba
 **Amazon S3 - Lifecycle Rules (Scenario 1)**
 >Your application on EC2 creates images thumbnails after profile photos are uploaded to Amazon S3. These thumbnails can be easily recreated and only need to be kept for 60 days. The source images should be able to be immediately retrieved for these 60 days, and afterwards, the user can wait up to 6 hours. How would you design this
 
-Solution: S3 source image can be on the **standard class for 60 days** and then transition them to **Glacier after 60 days**
+Solution:
+- S3 source image can be on the **standard class for 60 days** and then transition them to **Glacier after 60 days**
+- **Thumbnails** can be on **One-Zone IA**, as they can be **recreated** if lost. Lifecycle config to **delete after 60 days**
