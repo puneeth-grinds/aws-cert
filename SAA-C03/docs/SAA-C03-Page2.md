@@ -322,3 +322,11 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 ## 11. Amazon S3 Advanced
 This covers topics such as Lifecycle rules, Event notifications, Performance, Batch operations and S3 storage lens 
 
+### 11.1 Amazon S3 - Moving Between Storage Classes
+- Storage of objects can be transitioned between storage classes
+- This can be automated by making use of **Lifecycle rules**
+
+**Transition Actions**
+- objects to transition to another storage class 
+- Example: Move to Standard IA class after 60 days of creation
+
