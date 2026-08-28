@@ -378,3 +378,7 @@ Solution:
 **S3 Performance - S3 Byte-Range Fetches**
 - **Parallelize GETs** by requesting specific range of bytes
 - **Increase the speed of download**
+
+### 11.6 S3 Batch Operations
+- **Peform bulk operations on exisiting S3 objects with a single request**
+- **Encrypt all unencrypted objects** 
