@@ -319,3 +319,112 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 - **Stored in directories instead of buckets**
 - **Milli-second latency**
 
+## 11. Amazon S3 Advanced
+This covers topics such as Lifecycle rules, Event notifications, Performance, Batch operations and S3 storage lens 
+
+### 11.1 Amazon S3 - Moving Between Storage Classes
+- Storage of objects can be transitioned between storage classes
+- This can be automated by making use of **Lifecycle rules**
+
+**Transition Actions**
+- objects to transition to another storage class 
+- Example: Move to Standard IA class after 60 days of creation
+
+**Expiration Actions**
+- configure objects to expire after some time 
+- Example: Access log files can be deleted after 365 days
+
+**Amazon S3 - Lifecycle Rules (Scenario 1)**
+>Your application on EC2 creates images thumbnails after profile photos are uploaded to Amazon S3. These thumbnails can be easily recreated and only need to be kept for 60 days. The source images should be able to be immediately retrieved for these 60 days, and afterwards, the user can wait up to 6 hours. How would you design this
+
+Solution:
+- S3 source image can be on the **standard class for 60 days** and then transition them to **Glacier after 60 days**
+- **Thumbnails** can be on **One-Zone IA**, as they can be **recreated** if lost. Lifecycle config to **delete after 60 days**
+
+**Amazon S3 - Lifecycle Rules (Scenario 2)**
+> A rule in your company states that you should be able to recover your deleted S3 objects immediately for 30 days, although this may happen rarely. After this time, and for up to 365 days, deleted objects should be recoverable within 48 hours.
+Solution:
+- Enable **S3 versioning** for marking deleted objects and can be recovered
+- Transition **non-current** version objects to **standard IA**
+- Later transition them to **Glacier Deep Archive**
+
+### 11.2 Amazon S3 - Analytics
+- Helps you decide when to **transition objects to the right storage class**
+- Recommendation:
+    1. Standard and Standard IA
+    2. Do **NOT** work for **One-Zone IA or Glacier**
+
+### 11.3 S3 Requester Pays
+- Bucket owner pays for all S3 storage and data transfer cost associated with it 
+- **With Requester Pays bucket**, the requester instead of the bucker owner pays the cost of the request and downloads the data from the bucket
+- **Requester must be authenticated**
+
+### 11.4 S3 Event Notifications
+- Event are actions happening inside the S3 bucket
+- Event notifications can be sent to certain **destination endpoints such as SNS, SQS, Lambda functions**
+- We need **IAM policies** configured for performing Event notifications/Actions
+
+### 11.5 S3 Baseline Performance 
+- Amazon S3 automatically scales to high request rates, latency 100-200ms
+- We can get **3500 PUT/COPY/POST/DELETE** OR **5500 GET/HEAD requests per second per prefix**
+
+**Multi-Part upload**
+- **Recommended** for files **> 100MB**
+- **MUST** use for files **> 5GB**
+
+**S3 Transfer Accerleration**
+- **Increase transfer speed** by transferring file to an AWS edge location which will forward the data to the S3 bucket in the target region via AWS internal network systems
+
+**S3 Performance - S3 Byte-Range Fetches**
+- **Parallelize GETs** by requesting specific range of bytes
+- **Increase the speed of download**
+
+### 11.6 S3 Batch Operations
+- **Peform bulk operations on exisiting S3 objects with a single request**
+- **Encrypt all unencrypted objects** 
+![alt text](../assets/S3_batch_operation.png)
+
+### 11.7 S3 - Storage Lens 
+- **Understand, Analyze and optimize storage across entire AWS organization**
+- **Aggregate data** for Organization level, specific accounts,regions, buckets or prefixes
+- Use **default or custome dashboards**
+
+**Storage Lens - Default Dashboard**
+- **Preconfigured** by Amazon S3
+- **Multi-Region and Multi-Account data**
+- **Can't be deleted, but can be disabled**
+
+### 11.8 Storage Metrics
+**Summary Metrics**
+- General insight about S3 storage 
+- To identify fast growing, unused buckets
+
+**Cost Optimization**
+- Provide insights to manage and **optimize storage costs**
+- To identify which objects can be transitioned for better cost savings
+
+**Data-Protection Metrics**
+- **data protection feature insights**
+- Enable versioning etc.
+
+**Access Management metrics**
+- Insights for S3 Object ownership
+
+**Event Metrics**
+- Insights into **S3 Event nofitication**
+
+**Performance Metrics**
+- Insight for **S3 Transfer Acceleration** 
+
+**Activity Metrics**
+- Provide insights about how **storage is requested**
+
+### 11.9 Free Metrics vs Paid Metrics
+
+**Free Metrics**
+- Contain around **28 usage metrics**
+- **Data available for queries for 14 days** 
+
+**Advances Metrics**
+- CloudWatch Publishing
+- Advances metrics
