@@ -386,4 +386,10 @@ Solution:
 
 ### 11.7 S3 - Storage Lens 
 - **Understand, Analyze and optimize storage across entire AWS organization**
-- Aggregate data for Organization level, specific accounts,regions, buckets or prefixes
+- **Aggregate data** for Organization level, specific accounts,regions, buckets or prefixes
+- Use **default or custome dashboards**
+
+**Storage Lens - Default Dashboard**
+- **Preconfigured** by Amazon S3
+- **Multi-Region and Multi-Account data**
+- **Can't be deleted, but can be disabled**
