@@ -374,3 +374,7 @@ Solution:
 
 **S3 Transfer Accerleration**
 - **Increase transfer speed** by transferring file to an AWS edge location which will forward the data to the S3 bucket in the target region via AWS internal network systems
+
+**S3 Performance - S3 Byte-Range Fetches**
+- **Parallelize GETs** by requesting specific range of bytes
+- **Increase the speed of download**
