@@ -330,3 +330,6 @@ This covers topics such as Lifecycle rules, Event notifications, Performance, Ba
 - objects to transition to another storage class 
 - Example: Move to Standard IA class after 60 days of creation
 
+**Expiration Actions**
+- configure objects to expire after some time 
+- Example: Access log files can be deleted after 365 days
