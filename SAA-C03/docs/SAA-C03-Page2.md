@@ -347,3 +347,9 @@ Solution:
 - Enable **S3 versioning** for marking deleted objects and can be recovered
 - Transition **non-current** version objects to **standard IA**
 - Later transition them to **Glacier Deep Archive**
+
+### 11.2 Amazon S3 - Analytics
+- Helps you decide when to **transition objects to the right storage class**
+- Recommendation:
+    1. Standard and Standard IA
+    2. Do **NOT** work for **One-Zone IA or Glacier**
