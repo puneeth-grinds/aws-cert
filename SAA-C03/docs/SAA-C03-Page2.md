@@ -319,3 +319,6 @@ This section covers S3 overview topics for SAA C03. However, we do have S3 Advan
 - **Stored in directories instead of buckets**
 - **Milli-second latency**
 
+## 11. Amazon S3 Advanced
+This covers topics such as Lifecycle rules, Event notifications, Performance, Batch operations and S3 storage lens 
+
