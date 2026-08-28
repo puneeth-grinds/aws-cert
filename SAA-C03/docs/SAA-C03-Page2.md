@@ -382,3 +382,4 @@ Solution:
 ### 11.6 S3 Batch Operations
 - **Peform bulk operations on exisiting S3 objects with a single request**
 - **Encrypt all unencrypted objects** 
+![alt text](../assets/S3_batch_operation.png)
