@@ -371,3 +371,6 @@ Solution:
 **Multi-Part upload**
 - **Recommended** for files **> 100MB**
 - **MUST** use for files **> 5GB**
+
+**S3 Transfer Accerleration**
+- **Increase transfer speed** by transferring file to an AWS edge location which will forward the data to the S3 bucket in the target region via AWS internal network systems
