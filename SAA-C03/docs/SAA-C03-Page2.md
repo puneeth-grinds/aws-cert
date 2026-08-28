@@ -412,3 +412,9 @@ Solution:
 
 **Event Metrics**
 - Insights into **S3 Event nofitication**
+
+**Performance Metrics**
+- Insight for **S3 Transfer Acceleration** 
+
+**Activity Metrics**
+- Provide insights about how **storage is requested**
