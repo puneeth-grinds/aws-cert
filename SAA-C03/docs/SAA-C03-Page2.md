@@ -362,4 +362,8 @@ Solution:
 ### 11.4 S3 Event Notifications
 - Event are actions happening inside the S3 bucket
 - Event notifications can be sent to certain **destination endpoints such as SNS, SQS, Lambda functions**
-- We need **IAM policies** configured for performing Event notifications/Actions 
+- We need **IAM policies** configured for performing Event notifications/Actions
+
+### 11.5 S3 Baseline Performance 
+- Amazon S3 automatically scales to high request rates, latency 100-200ms
+- We can get **3500 PUT/COPY/POST/DELETE** OR **5500 GET/HEAD requests per second per prefix**
