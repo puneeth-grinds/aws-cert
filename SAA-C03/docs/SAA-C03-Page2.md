@@ -367,3 +367,7 @@ Solution:
 ### 11.5 S3 Baseline Performance 
 - Amazon S3 automatically scales to high request rates, latency 100-200ms
 - We can get **3500 PUT/COPY/POST/DELETE** OR **5500 GET/HEAD requests per second per prefix**
+
+**Multi-Part upload**
+- **Recommended** for files **> 100MB**
+- **MUST** use for files **> 5GB**
