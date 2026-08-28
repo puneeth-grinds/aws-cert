@@ -418,3 +418,13 @@ Solution:
 
 **Activity Metrics**
 - Provide insights about how **storage is requested**
+
+### 11.9 Free Metrics vs Paid Metrics
+
+**Free Metrics**
+- Contain around **28 usage metrics**
+- **Data available for queries for 14 days** 
+
+**Advances Metrics**
+- CloudWatch Publishing
+- Advances metrics
