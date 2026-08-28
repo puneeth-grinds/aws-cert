@@ -345,3 +345,5 @@ Solution:
 > A rule in your company states that you should be able to recover your deleted S3 objects immediately for 30 days, although this may happen rarely. After this time, and for up to 365 days, deleted objects should be recoverable within 48 hours.
 Solution:
 - Enable **S3 versioning** for marking deleted objects and can be recovered
+- Transition **non-current** version objects to **standard IA**
+- Later transition them to **Glacier Deep Archive**
