@@ -428,3 +428,4 @@ Solution:
 **Advances Metrics**
 - CloudWatch Publishing
 - Advances metrics
+- Data available for queries for **15 months**
