@@ -457,3 +457,11 @@ This section covers the security aspect associated with S3 security
 **Amazon S3 Encryption - SSE-C**
 - **Encryption keys managed by AWS outside of AWS**
 - S3 does **NOT** store these keys 
+- **HTTPS** protocol must be used 
+
+
+**Amazon S3 - Client-Side Encryption**
+- Use libraries such as **Client-Side Encryption Library**
+- Client must **encrypt** data before sending into S3
+- **Decryption** also happens **outside AWS**
+- **Customer manages the keys** 
