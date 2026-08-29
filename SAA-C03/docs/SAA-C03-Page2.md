@@ -434,3 +434,13 @@ Solution:
 ## 12 Amazon S3 - Security 
 This section covers the security aspect associated with S3 security 
 
+### 12.1 Amazon - S3 Object Ecnryption
+- We can encrypt objects in amazon S3 using 4 methods
+    1. Server-Side Encryption (SEE)
+    2. Client-Side Encryption 
+
+**Amazon S3 Encryption - Server Side Encryption**
+- **Default**
+- **Keys handled, managed and owned by AWS**
+- Encryption type is **AES-256**
+- Must set header **"zamz-server-side-encryption":"AES256"**
