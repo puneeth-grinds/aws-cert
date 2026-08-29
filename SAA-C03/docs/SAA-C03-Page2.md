@@ -540,3 +540,8 @@ This section covers the security aspect associated with S3 security
 - We have a lot of data inside a S3 bucket and we **create points to route to the right data**
 - Example: Creating a finance endpoints, routes to the finance related data 
 - Done via **Access Point Policy**(similar to S3 Policy)
+- **Each access point has its own DNS**
+
+### 12.9 Amazon S3 - Access Points - VPC Origin 
+- Access points can be defined to be accessible privately only from within the VPC
+- We need to create **VPC Endpoint within the VPC** 
