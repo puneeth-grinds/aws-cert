@@ -444,3 +444,9 @@ This section covers the security aspect associated with S3 security
 - **Keys handled, managed and owned by AWS**
 - Encryption type is **AES-256**
 - Must set header **"zamz-server-side-encryption":"AES256"**
+![alt text](../assets/SSE.png)
+
+**Amazon S3 Encryption - Server-Side Encryption - KMS**
+- Keys are managed and owned by **KMS** (Key Management Service)
+- Can be created and managed by the customer
+- **"z-amz-server-side-encryption":"aws:kmz"**
