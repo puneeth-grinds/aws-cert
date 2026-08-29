@@ -479,3 +479,8 @@ This section covers the security aspect associated with S3 security
 ### 12.3 Amazon S3 - CORS
 - **CORS - Cross-Origin Resource Sharing**
 - **Origin = Scheme(Protocol) + Host + Port**
+- **CORS is web browser based mechanism to allow requests to other origins while visiting the main origin**
+- **Same Origin:**  Contains same Scheme, Same port and Same host
+- Example:`http://example.com/app1 & http://example.com/app2`
+- **Different Origin**: Contains different Scheme, or Host or Different Port
+- Exmaple: `http://www.example.com & http://other.example.com `
