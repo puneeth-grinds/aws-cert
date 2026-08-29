@@ -536,3 +536,7 @@ This section covers the security aspect associated with S3 security
         - **Object is protected forever**
         - Person with right IAM permission can remove/manage
 
+### 12.8 Amazon S3 - Access Points
+- We have a lot of data inside a S3 bucket and we **create points to route to the right data**
+- Example: Creating a finance endpoints, routes to the finance related data 
+- Done via **Access Point Policy**(similar to S3 Policy)
