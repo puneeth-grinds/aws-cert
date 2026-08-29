@@ -491,4 +491,8 @@ This section covers the security aspect associated with S3 security
 - We have a origin called `https://www.example.com`, a web browser and another origin called `https:www.other.com`(cross origin)
 - Origin makes a request to the web browser, and the **browser makes a perflight request** to the cross-origin.
 - If the **web browser is configured for Cross-origin, it allows GET, PUT and POST to be performed on the Cross-Origin** 
+![alt text](../assets/CORS.png)
 
+**How does it apply for S3**
+- **If a client makes a cross-origin request on our S3 bucket, we need to enable the correct CORS headers**
+- **Specific origin or all origins can be enabled**
