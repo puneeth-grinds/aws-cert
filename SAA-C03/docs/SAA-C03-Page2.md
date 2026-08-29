@@ -505,3 +505,10 @@ This section covers the security aspect associated with S3 security
 - **Logged as a file into another S3 bucket** 
 - Used for **analytics or audit purpose**
 - **Do not set Logging bucket and monitoring bucket the same, it will create a infinite loops**
+
+### 12.6 Amazon S3 - Pre-signed URL's
+- URL's generated using S3 console, AWS CLI or SDK
+- It has Expiration date
+    1. **S3 Console** - 1 min upto **12 hours**
+    2. **AWS CLI** - 1 min upto **168 hours**
+- User logging in through this URL inherits the permission of the user who created it. 
