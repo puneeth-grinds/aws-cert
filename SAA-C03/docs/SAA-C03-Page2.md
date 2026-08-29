@@ -429,3 +429,8 @@ Solution:
 - CloudWatch Publishing
 - Advances metrics
 - Data available for queries for **15 months**
+
+---
+## 12 Amazon S3 - Security 
+This section covers the security aspect associated with S3 security 
+
