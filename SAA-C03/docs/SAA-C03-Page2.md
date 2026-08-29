@@ -471,3 +471,7 @@ This section covers the security aspect associated with S3 security
 - Amazon S3 exposes **two endpoints**:
     1. **HTTP Endpoint**: non encrypted
     2. **HTTPS Endpoint**: Encryption in flight
+
+### 12.2 Amazon S3 - Default Encryption vs Bucket Policies
+- All buckets have **SSE-S3 by default**
+- **Encyrption can be forced using Bucket policy**
