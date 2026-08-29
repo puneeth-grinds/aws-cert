@@ -488,4 +488,7 @@ This section covers the security aspect associated with S3 security
 > **Exam Tip**: Requests from one origin to another origin will NOT be fulfilled if CORS is not enabled 
 
 ### 12.3 What is CORS - How it works?
-- We have a origin called `https://www.example.com`, a web browser and another origin called `https:www.other.com`
+- We have a origin called `https://www.example.com`, a web browser and another origin called `https:www.other.com`(cross origin)
+- Origin makes a request to the web browser, and the **browser makes a perflight request** to the cross-origin.
+- If the **web browser is configured for Cross-origin, it allows GET, PUT and POST to be performed on the Cross-Origin** 
+
