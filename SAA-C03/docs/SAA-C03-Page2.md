@@ -496,3 +496,9 @@ This section covers the security aspect associated with S3 security
 **How does it apply for S3**
 - **If a client makes a cross-origin request on our S3 bucket, we need to enable the correct CORS headers**
 - **Specific origin or all origins can be enabled**
+
+### 12.4 Amazon S3 - MFA Delete 
+- **MFA required**: disable versioning or deleting objects 
+- **Bucket owner or Root Account** can perform MFA delete 
+
+### 12.5 Amazon S3. - Access logs
