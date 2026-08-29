@@ -502,3 +502,6 @@ This section covers the security aspect associated with S3 security
 - **Bucket owner or Root Account** can perform MFA delete 
 
 ### 12.5 Amazon S3. - Access logs
+- **Logged as a file into another S3 bucket** 
+- Used for **analytics or audit purpose**
+- **Do not set Logging bucket and monitoring bucket the same, it will create a infinite loops**
