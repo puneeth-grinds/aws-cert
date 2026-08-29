@@ -545,3 +545,8 @@ This section covers the security aspect associated with S3 security
 ### 12.9 Amazon S3 - Access Points - VPC Origin 
 - Access points can be defined to be accessible privately only from within the VPC
 - We need to create **VPC Endpoint within the VPC** 
+
+### 12.10 Amazon S3 - Object Lambda
+- **Modify the object just before it is being retrieved**
+- **Use Case**: Identify PII, converting XML to JSON
+![alt text](../assets/object_lambda.png)
