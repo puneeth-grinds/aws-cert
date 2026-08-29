@@ -475,3 +475,7 @@ This section covers the security aspect associated with S3 security
 ### 12.2 Amazon S3 - Default Encryption vs Bucket Policies
 - All buckets have **SSE-S3 by default**
 - **Encyrption can be forced using Bucket policy**
+
+### 12.3 Amazon S3 - CORS
+- **CORS - Cross-Origin Resource Sharing**
+- **Origin = Scheme(Protocol) + Host + Port**
