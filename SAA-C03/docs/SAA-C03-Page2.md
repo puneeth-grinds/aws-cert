@@ -517,3 +517,16 @@ This section covers the security aspect associated with S3 security
 - **Adopt WORM model (Write Once Read Many)**
 - **Take an object, put it in Glacier vault and lock it.**
 - Used creating **Vault Lock Policy** 
+- **Use case**: Legal and compliance reasons 
+- At the **bucket level**
+
+**S3 Object Lock (Versioning must be enabled)**
+- Follows WORM Model
+- **Lock can be done at Object level** 
+- There are 2 mode's:
+    1. **Retention mode - Compliance:**
+        - Object versions cannot be overwritten or deleted (including Root user)
+        - Retention period cannot be changed
+    2. **Retention mode - Governance**
+        - Object versions cannot be overwritten or deleted by MOST users, but can be **done by root user**
+        - A little more **flexible** 
