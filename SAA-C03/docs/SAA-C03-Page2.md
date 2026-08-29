@@ -465,3 +465,9 @@ This section covers the security aspect associated with S3 security
 - Client must **encrypt** data before sending into S3
 - **Decryption** also happens **outside AWS**
 - **Customer manages the keys** 
+
+**Amazon S3 - Encryption in transit (SSL/TLS)**
+- Also called **SSL/TLS**
+- Amazon S3 exposes **two endpoints**:
+    1. **HTTP Endpoint**: non encrypted
+    2. **HTTPS Endpoint**: Encryption in flight
