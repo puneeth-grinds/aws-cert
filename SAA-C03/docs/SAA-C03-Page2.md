@@ -450,3 +450,10 @@ This section covers the security aspect associated with S3 security
 - Keys are managed and owned by **KMS** (Key Management Service)
 - Can be created and managed by the customer
 - **"z-amz-server-side-encryption":"aws:kmz"**
+
+**SSE-KMS Limitation**
+- Has its own API, it calls its own API's for decrypting and has quota limit
+
+**Amazon S3 Encryption - SSE-C**
+- **Encryption keys managed by AWS outside of AWS**
+- S3 does **NOT** store these keys 
