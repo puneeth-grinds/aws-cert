@@ -512,3 +512,8 @@ This section covers the security aspect associated with S3 security
     1. **S3 Console** - 1 min upto **12 hours**
     2. **AWS CLI** - 1 min upto **168 hours**
 - User logging in through this URL inherits the permission of the user who created it. 
+
+### 12.7 Glacier Vault Lock & S3 Object Lock
+- **Adopt WORM model (Write Once Read Many)**
+- **Take an object, put it in Glacier vault and lock it.**
+- Used creating **Vault Lock Policy** 
