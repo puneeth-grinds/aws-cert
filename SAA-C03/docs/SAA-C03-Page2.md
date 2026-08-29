@@ -484,3 +484,8 @@ This section covers the security aspect associated with S3 security
 - Example:`http://example.com/app1 & http://example.com/app2`
 - **Different Origin**: Contains different Scheme, or Host or Different Port
 - Exmaple: `http://www.example.com & http://other.example.com `
+
+> **Exam Tip**: Requests from one origin to another origin will NOT be fulfilled if CORS is not enabled 
+
+### 12.3 What is CORS - How it works?
+- We have a origin called `https://www.example.com`, a web browser and another origin called `https:www.other.com`
