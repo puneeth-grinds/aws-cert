@@ -428,3 +428,125 @@ Solution:
 **Advances Metrics**
 - CloudWatch Publishing
 - Advances metrics
+- Data available for queries for **15 months**
+
+---
+## 12 Amazon S3 - Security 
+This section covers the security aspect associated with S3 security 
+
+### 12.1 Amazon - S3 Object Ecnryption
+- We can encrypt objects in amazon S3 using 4 methods
+    1. Server-Side Encryption (SEE)
+    2. Client-Side Encryption 
+
+**Amazon S3 Encryption - Server Side Encryption**
+- **Default**
+- **Keys handled, managed and owned by AWS**
+- Encryption type is **AES-256**
+- Must set header **"zamz-server-side-encryption":"AES256"**
+![alt text](../assets/SSE.png)
+
+**Amazon S3 Encryption - Server-Side Encryption - KMS**
+- Keys are managed and owned by **KMS** (Key Management Service)
+- Can be created and managed by the customer
+- **"z-amz-server-side-encryption":"aws:kmz"**
+
+**SSE-KMS Limitation**
+- Has its own API, it calls its own API's for decrypting and has quota limit
+
+**Amazon S3 Encryption - SSE-C**
+- **Encryption keys managed by AWS outside of AWS**
+- S3 does **NOT** store these keys 
+- **HTTPS** protocol must be used 
+
+
+**Amazon S3 - Client-Side Encryption**
+- Use libraries such as **Client-Side Encryption Library**
+- Client must **encrypt** data before sending into S3
+- **Decryption** also happens **outside AWS**
+- **Customer manages the keys** 
+
+**Amazon S3 - Encryption in transit (SSL/TLS)**
+- Also called **SSL/TLS**
+- Amazon S3 exposes **two endpoints**:
+    1. **HTTP Endpoint**: non encrypted
+    2. **HTTPS Endpoint**: Encryption in flight
+
+### 12.2 Amazon S3 - Default Encryption vs Bucket Policies
+- All buckets have **SSE-S3 by default**
+- **Encyrption can be forced using Bucket policy**
+
+### 12.3 Amazon S3 - CORS
+- **CORS - Cross-Origin Resource Sharing**
+- **Origin = Scheme(Protocol) + Host + Port**
+- **CORS is web browser based mechanism to allow requests to other origins while visiting the main origin**
+- **Same Origin:**  Contains same Scheme, Same port and Same host
+- Example:`http://example.com/app1 & http://example.com/app2`
+- **Different Origin**: Contains different Scheme, or Host or Different Port
+- Exmaple: `http://www.example.com & http://other.example.com `
+
+> **Exam Tip**: Requests from one origin to another origin will NOT be fulfilled if CORS is not enabled 
+
+### 12.3 What is CORS - How it works?
+- We have a origin called `https://www.example.com`, a web browser and another origin called `https:www.other.com`(cross origin)
+- Origin makes a request to the web browser, and the **browser makes a perflight request** to the cross-origin.
+- If the **web browser is configured for Cross-origin, it allows GET, PUT and POST to be performed on the Cross-Origin** 
+![alt text](../assets/CORS.png)
+
+**How does it apply for S3**
+- **If a client makes a cross-origin request on our S3 bucket, we need to enable the correct CORS headers**
+- **Specific origin or all origins can be enabled**
+
+### 12.4 Amazon S3 - MFA Delete 
+- **MFA required**: disable versioning or deleting objects 
+- **Bucket owner or Root Account** can perform MFA delete 
+
+### 12.5 Amazon S3. - Access logs
+- **Logged as a file into another S3 bucket** 
+- Used for **analytics or audit purpose**
+- **Do not set Logging bucket and monitoring bucket the same, it will create a infinite loops**
+
+### 12.6 Amazon S3 - Pre-signed URL's
+- URL's generated using S3 console, AWS CLI or SDK
+- It has Expiration date
+    1. **S3 Console** - 1 min upto **12 hours**
+    2. **AWS CLI** - 1 min upto **168 hours**
+- User logging in through this URL inherits the permission of the user who created it. 
+
+### 12.7 Glacier Vault Lock & S3 Object Lock
+- **Adopt WORM model (Write Once Read Many)**
+- **Take an object, put it in Glacier vault and lock it.**
+- Used creating **Vault Lock Policy** 
+- **Use case**: Legal and compliance reasons 
+- At the **bucket level**
+
+**S3 Object Lock (Versioning must be enabled)**
+- Follows WORM Model
+- **Lock can be done at Object level** 
+- There are 3 mode's:
+    1. **Retention mode - Compliance:**
+        - Object versions cannot be overwritten or deleted (including Root user)
+        - **Retention period cannot be changed**
+    2. **Retention mode - Governance**
+        - Object versions cannot be overwritten or deleted by MOST users, but can be **done by root user**
+        - A little more **flexible** 
+        - Retention period cannot be changed
+    3. **Legal Hold**
+        - **Protects the object indefinitely**
+        - **Object is protected forever**
+        - Person with right IAM permission can remove/manage
+
+### 12.8 Amazon S3 - Access Points
+- We have a lot of data inside a S3 bucket and we **create points to route to the right data**
+- Example: Creating a finance endpoints, routes to the finance related data 
+- Done via **Access Point Policy**(similar to S3 Policy)
+- **Each access point has its own DNS**
+
+### 12.9 Amazon S3 - Access Points - VPC Origin 
+- Access points can be defined to be accessible privately only from within the VPC
+- We need to create **VPC Endpoint within the VPC** 
+
+### 12.10 Amazon S3 - Object Lambda
+- **Modify the object just before it is being retrieved**
+- **Use Case**: Identify PII, converting XML to JSON
+![alt text](../assets/object_lambda.png)
