@@ -565,3 +565,10 @@ This section covers Amazon CloudFront
     2. **Uploading files** to S3 through CloudFront
 - **VPC Origin**
     1. For applications hosted in VPC private subnets 
+
+### 13.3 CloudFront - ALB or EC2 as an origin using VPC Origins
+- Using **VPC origins** 
+- Deliver traffic to private:
+    1. Application Load Balancer
+    2. Network Load Balancer
+    3. Ec2 Instances
