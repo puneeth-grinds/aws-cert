@@ -578,3 +578,9 @@ This section covers Amazon CloudFront
 - **Allow who can access your distribution based on country**
 - **Allowlist**: Allows users to access distribution if their country are on approved country list 
 - **Blocklist** - Banned countries
+
+### 13.5 CloudFront Cache Validation 
+- If Back-end origin is updated, CloudFront will have no updated version until the TTL has expired
+- We can perform **Foreful/Partial cache refresh**
+- It is called as **CloudFront Invalidation**
+
