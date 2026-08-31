@@ -550,3 +550,48 @@ This section covers the security aspect associated with S3 security
 - **Modify the object just before it is being retrieved**
 - **Use Case**: Identify PII, converting XML to JSON
 ![alt text](../assets/object_lambda.png)
+
+## 13. AWS CloudFront
+This section covers Amazon CloudFront
+
+### 13.1 AWS CloudFront
+- It is a **Content Delivery Network**
+- **Improves read performance, content is cached at the edge** 
+- **DDoS Protection**, with **WFA**, and **Shield** 
+
+### 13.2 CloudFront - Origins
+- **S3 bucket**
+    1. For **distributing files** and caching them at the edge 
+    2. **Uploading files** to S3 through CloudFront
+- **VPC Origin**
+    1. For applications hosted in VPC private subnets 
+
+### 13.3 CloudFront - ALB or EC2 as an origin using VPC Origins
+- Using **VPC origins** 
+- Deliver traffic to private:
+    1. Application Load Balancer
+    2. Network Load Balancer
+    3. Ec2 Instances
+![alt text](../assets/cloudfront.png)
+
+### 13.4 CloudFront Geo Restriction
+- **Allow who can access your distribution based on country**
+- **Allowlist**: Allows users to access distribution if their country are on approved country list 
+- **Blocklist** - Banned countries
+
+### 13.5 CloudFront Cache Validation 
+- If Back-end origin is updated, CloudFront will have no updated version until the TTL has expired
+- We can perform **Foreful/Partial cache refresh**
+- It is called as **CloudFront Invalidation**
+
+### 13.6 AWS Global Accelerator
+- **Leverages Edge Location and AWS Internal Network**
+- **Unicast IP** - **One server holds One IP address**
+- **Anycast IP** - **All servers hold the same IP**, and users will be routed to the nearest one 
+- **Intelligent routing and low latency**
+- **Automatic failover** incase of ALB unhealthhy
+- **DDoS and shield protection
+**
+**How It Works?**
+- The request talks to **closest Edge location**, and from their it goes **directly to ALB** via **AWS Internal Network**
+
