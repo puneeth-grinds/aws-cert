@@ -573,3 +573,8 @@ This section covers Amazon CloudFront
     2. Network Load Balancer
     3. Ec2 Instances
 ![alt text](../assets/cloudfront.png)
+
+### 13.4 CloudFront Geo Restriction
+- **Allow who can access your distribution based on country**
+- **Allowlist**: Allows users to access distribution if their country are on approved country list 
+- **Blocklist** - Banned countries
