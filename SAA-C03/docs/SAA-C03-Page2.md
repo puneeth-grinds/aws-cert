@@ -584,3 +584,10 @@ This section covers Amazon CloudFront
 - We can perform **Foreful/Partial cache refresh**
 - It is called as **CloudFront Invalidation**
 
+### 13.6 AWS Global Accelerator
+- **Leverages Edge Location and AWS Internal Network**
+- **Unicast IP** - **One server holds One IP address**
+- **Anycast IP** - **All servers hold the same IP**, and users will be routed to the nearest one 
+
+**How It Works?**
+- The request talks to **closest Edge location**, and from their it goes **directly to ALB** via **AWS Internal Network**
