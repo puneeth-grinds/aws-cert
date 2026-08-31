@@ -550,3 +550,11 @@ This section covers the security aspect associated with S3 security
 - **Modify the object just before it is being retrieved**
 - **Use Case**: Identify PII, converting XML to JSON
 ![alt text](../assets/object_lambda.png)
+
+## 13. AWS CloudFront
+This section covers Amazon CloudFront
+
+### 13.1 AWS CloudFront
+- It is a **Content Delivery Network**
+- **Improves read performance, content is cached at the edge** 
+- **DDoS Protection**, with **WFA**, and **Shield** 
