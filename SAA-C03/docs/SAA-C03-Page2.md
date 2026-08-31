@@ -572,3 +572,4 @@ This section covers Amazon CloudFront
     1. Application Load Balancer
     2. Network Load Balancer
     3. Ec2 Instances
+![alt text](../assets/cloudfront.png)
