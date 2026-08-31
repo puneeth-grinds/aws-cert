@@ -588,6 +588,10 @@ This section covers Amazon CloudFront
 - **Leverages Edge Location and AWS Internal Network**
 - **Unicast IP** - **One server holds One IP address**
 - **Anycast IP** - **All servers hold the same IP**, and users will be routed to the nearest one 
-
+- **Intelligent routing and low latency**
+- **Automatic failover** incase of ALB unhealthhy
+- **DDoS and shield protection
+**
 **How It Works?**
 - The request talks to **closest Edge location**, and from their it goes **directly to ALB** via **AWS Internal Network**
+
