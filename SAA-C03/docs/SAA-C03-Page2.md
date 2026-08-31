@@ -558,3 +558,10 @@ This section covers Amazon CloudFront
 - It is a **Content Delivery Network**
 - **Improves read performance, content is cached at the edge** 
 - **DDoS Protection**, with **WFA**, and **Shield** 
+
+### 13.2 CloudFront - Origins
+- **S3 bucket**
+    1. For **distributing files** and caching them at the edge 
+    2. **Uploading files** to S3 through CloudFront
+- **VPC Origin**
+    1. For applications hosted in VPC private subnets 
